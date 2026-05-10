@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import clsx from "clsx";
@@ -12,10 +13,24 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-accent/10 bg-surface/95 shadow-header backdrop-blur-md">
-      <div className="mx-auto flex max-w-shell items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/" className="shrink-0" aria-label="ERZ GARAGE anasayfa">
-          <div className="text-xl font-black text-accent">{siteConfig.shortName}</div>
-          <div className="text-[10px] font-bold uppercase tracking-[0.24em] text-soft">{siteConfig.subtitle}</div>
+      <div className="mx-auto flex max-w-shell items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+        <Link href="/" className="flex shrink-0 items-center gap-3" aria-label="ERZ GARAGE anasayfa">
+          <span className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-accent/55 bg-black shadow-[0_0_0_4px_rgba(225,29,46,0.08),0_14px_36px_rgba(225,29,46,0.28)]">
+            <Image
+              src="/images/logo.jpg"
+              alt="ERZ GARAGE logo"
+              fill
+              sizes="56px"
+              className="object-cover"
+              priority
+            />
+          </span>
+          <span className="hidden sm:block">
+            <span className="block text-lg font-black text-white">{siteConfig.shortName}</span>
+            <span className="block text-[10px] font-bold uppercase tracking-[0.24em] text-soft">
+              {siteConfig.subtitle}
+            </span>
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Masaüstü menü">

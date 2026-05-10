@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { siteConfig } from "@/data/site";
 import { services } from "@/data/services";
@@ -12,7 +13,18 @@ export function Footer() {
       <Container>
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h2 className="text-xl font-black text-white">{siteConfig.name}</h2>
+            <div className="flex items-center gap-4">
+              <span className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border border-accent/35 bg-black shadow-red">
+                <Image
+                  src="/images/logo.jpg"
+                  alt="ERZ GARAGE logo"
+                  fill
+                  sizes="64px"
+                  className="object-cover"
+                />
+              </span>
+              <h2 className="text-xl font-black text-white">{siteConfig.name}</h2>
+            </div>
             <p className="mt-3 text-sm text-soft">{siteConfig.businessType}</p>
             <p className="mt-2 text-sm text-soft">{siteConfig.brands.slice(0, 3).join(" • ")}</p>
             <p className="mt-2 text-sm text-soft">Telefon: {siteConfig.phoneDisplay}</p>
