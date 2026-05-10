@@ -112,3 +112,4 @@ Bu alanları güncellemek için:
 - İletişim formu şu an frontend hazırdır, backend entegrasyonu içermez.
 - BMW, Mercedes ve Audi için resmi logo kullanılmaz; metin tabanlı anlatım tercih edilir.
 # Oto
+# Oto
