@@ -13,7 +13,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(getBaseUrl()),
   title: siteConfig.name,
-  description: siteConfig.description
+  description: siteConfig.description,
+  icons: {
+    icon: [{ url: "/images/logo.jpg", type: "image/jpeg" }],
+    shortcut: [{ url: "/images/logo.jpg", type: "image/jpeg" }],
+    apple: [{ url: "/images/logo.jpg", type: "image/jpeg" }]
+  }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
