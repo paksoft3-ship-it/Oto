@@ -11,60 +11,80 @@ type HeroProps = {
 };
 
 export function Hero({ title, description, locationLabel = "Bursa Nilüfer Oto Servis" }: HeroProps) {
+  const titleParts = title.split(/(Tamir|Bakım)/g);
+
   return (
-    <section className="relative overflow-hidden border-b border-white/10 bg-ink">
-      <div className="absolute inset-0 bg-garage-grid bg-[size:36px_36px] opacity-20" />
-      <Container className="relative grid gap-10 py-16 sm:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:py-28">
-        <div>
-          <span className="inline-flex border border-accent/40 bg-accent/10 px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white">
+    <section className="relative min-h-[690px] overflow-hidden border-b border-accent/20 bg-ink sm:min-h-[760px] lg:min-h-[820px]">
+      <Image
+        src="/images/hero-garage.png"
+        alt="ERZ GARAGE Bursa Nilüfer premium oto servis atölyesi"
+        fill
+        className="object-cover"
+        priority
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/75 to-ink/15" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-transparent" />
+      <div className="absolute inset-0 bg-garage-grid bg-[size:40px_40px] opacity-[0.12]" />
+      <Container className="relative flex min-h-[690px] items-center py-20 sm:min-h-[760px] lg:min-h-[820px]">
+        <div className="max-w-3xl">
+          <span className="section-kicker">
             {locationLabel}
           </span>
-          <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            {title}
+          <h1 className="mt-6 text-4xl font-black leading-[1.05] text-white sm:text-6xl lg:text-7xl">
+            {titleParts.map((part, index) =>
+              part === "Tamir" || part === "Bakım" ? (
+                <span key={`${part}-${index}`} className="text-accent">
+                  {part}
+                </span>
+              ) : (
+                <span key={`${part}-${index}`}>{part}</span>
+              )
+            )}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-soft">{description}</p>
-          <div className="mt-8 flex flex-row flex-nowrap gap-2 sm:gap-3">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-soft sm:text-xl">{description}</p>
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Button
               href={siteConfig.phoneLink}
-              className="flex-1 px-2 text-[10px] sm:px-4 sm:text-xs md:text-sm"
               ariaLabel="Hero hemen ara"
               trackingEvent="phone_click"
               trackingParams={{ location: "hero", phone: siteConfig.phoneDigits }}
             >
-              Ara: {siteConfig.phoneDisplay}
+              Hemen Ara: {siteConfig.phoneDisplay}
             </Button>
             <Button
               href={siteConfig.whatsappUrl}
               external
               variant="secondary"
-              className="flex-1 px-2 text-[10px] sm:px-4 sm:text-xs md:text-sm"
               ariaLabel="Hero WhatsApp"
               trackingEvent="whatsapp_click"
               trackingParams={{ location: "hero", phone: siteConfig.phoneDigits }}
             >
-              WhatsApp
+              WhatsApp’tan Yaz
             </Button>
             <Button
               href={siteConfig.directionsUrl}
               external
               variant="ghost"
-              className="flex-1 px-2 text-[10px] sm:px-4 sm:text-xs md:text-sm"
               ariaLabel="Hero yol tarifi"
               trackingEvent="directions_click"
               trackingParams={{ location: "hero" }}
             >
-              Yol Tarifi
+              Yol Tarifi Al
             </Button>
           </div>
-        </div>
-        <div className="relative min-h-[320px] border border-white/10 bg-graphite">
-          <Image
-            src="/images/hero-garage.png"
-            alt="ERZ GARAGE premium oto servis görseli"
-            fill
-            className="object-cover"
-            priority
-          />
+          <div className="mt-10 flex flex-wrap gap-3 border-t border-white/10 pt-6">
+            {["BMW • Mercedes • Audi", "Arıza Tespit", "Periyodik Bakım", "7/24 Yol Yardım", "Bursa Nilüfer"].map(
+              (item) => (
+                <span
+                  key={item}
+                  className="border border-white/10 bg-surface-mid/80 px-3 py-2 text-xs font-bold uppercase tracking-[0.12em] text-soft shadow-panel"
+                >
+                  {item}
+                </span>
+              )
+            )}
+          </div>
         </div>
       </Container>
     </section>

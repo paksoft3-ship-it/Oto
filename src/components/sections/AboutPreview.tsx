@@ -5,10 +5,11 @@ import { Container } from "@/components/ui/Container";
 
 export function AboutPreview() {
   return (
-    <section className="border-y border-white/10 bg-graphite py-16 sm:py-20">
+    <section className="border-y border-metal bg-surface-low py-20 sm:py-28">
       <Container className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
         <div>
-          <h2 className="text-3xl font-semibold text-white">ERZ GARAGE Bursa Nilüfer</h2>
+          <span className="section-kicker">Atölye yaklaşımı</span>
+          <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">ERZ GARAGE Bursa Nilüfer</h2>
           <p className="mt-4 text-base leading-8 text-soft">
             BMW, Mercedes ve Audi başta olmak üzere premium Avrupa araçları için arıza tespit, bakım ve onarım
             süreçlerinde güvenilir iletişim odaklı hizmet sunuyoruz.
@@ -24,7 +25,7 @@ export function AboutPreview() {
           </div>
         </div>
         <Card className="p-6">
-          <h3 className="text-lg font-semibold text-white">Neden tercih ediliyor?</h3>
+          <h3 className="text-lg font-black text-white">Neden tercih ediliyor?</h3>
           <ul className="mt-4 space-y-4 text-sm leading-7 text-soft">
             {siteConfig.socialProofPoints.map((point) => (
               <li key={point} className="border-b border-white/5 pb-4 last:border-none last:pb-0">

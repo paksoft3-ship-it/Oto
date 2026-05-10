@@ -14,37 +14,42 @@ export function FinalCTA({
   sectionName = "final_cta"
 }: FinalCTAProps) {
   return (
-    <section className="pb-20 pt-16 sm:pb-24 sm:pt-20">
+    <section className="bg-ink pb-20 pt-16 sm:pb-28 sm:pt-20">
       <Container>
-        <div className="border border-white/10 bg-black p-8 sm:p-10">
-          <h2 className="text-3xl font-semibold text-white">{title}</h2>
-          <p className="mt-4 max-w-3xl text-base leading-8 text-soft">{description}</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button
-              href={siteConfig.phoneLink}
-              trackingEvent="phone_click"
-              trackingParams={{ location: sectionName, phone: siteConfig.phoneDigits }}
-            >
-              Hemen Ara: {siteConfig.phoneDisplay}
-            </Button>
-            <Button
-              href={siteConfig.whatsappUrl}
-              external
-              variant="secondary"
-              trackingEvent="whatsapp_click"
-              trackingParams={{ location: sectionName, phone: siteConfig.phoneDigits }}
-            >
-              WhatsApp’tan Yaz
-            </Button>
-            <Button
-              href={siteConfig.directionsUrl}
-              external
-              variant="ghost"
-              trackingEvent="directions_click"
-              trackingParams={{ location: sectionName }}
-            >
-              Yol Tarifi Al
-            </Button>
+        <div className="relative overflow-hidden border border-accent/25 bg-black p-8 sm:p-12">
+          <div className="absolute inset-0 bg-garage-grid bg-[size:40px_40px] opacity-10" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_20%,rgba(225,29,46,0.20),transparent_34%)]" />
+          <div className="relative">
+            <span className="section-kicker">Servis randevusu</span>
+            <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">{title}</h2>
+            <p className="mt-5 max-w-3xl text-base leading-8 text-soft">{description}</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button
+                href={siteConfig.phoneLink}
+                trackingEvent="phone_click"
+                trackingParams={{ location: sectionName, phone: siteConfig.phoneDigits }}
+              >
+                Hemen Ara: {siteConfig.phoneDisplay}
+              </Button>
+              <Button
+                href={siteConfig.whatsappUrl}
+                external
+                variant="secondary"
+                trackingEvent="whatsapp_click"
+                trackingParams={{ location: sectionName, phone: siteConfig.phoneDigits }}
+              >
+                WhatsApp’tan Yaz
+              </Button>
+              <Button
+                href={siteConfig.directionsUrl}
+                external
+                variant="ghost"
+                trackingEvent="directions_click"
+                trackingParams={{ location: sectionName }}
+              >
+                Yol Tarifi Al
+              </Button>
+            </div>
           </div>
         </div>
       </Container>

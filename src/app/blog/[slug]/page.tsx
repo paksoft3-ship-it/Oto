@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
+import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
@@ -70,31 +70,19 @@ export default async function BlogDetailPage({ params }: Props) {
   return (
     <>
       <JsonLd data={[breadcrumb, faqSchema, articleSchema]} />
-      <section className="border-b border-white/10 bg-graphite py-16 sm:py-24">
-        <Container className="grid gap-10 lg:grid-cols-[1fr_1fr] items-center">
-          <div>
-            <nav className="mb-6 text-sm text-soft">
-              <Link href="/" className="hover:text-white">
-                Anasayfa
-              </Link>{" "}
-              /{" "}
-              <Link href="/blog" className="hover:text-white">
-                Blog
-              </Link>{" "}
-              / <span className="text-white">{post.category}</span>
-            </nav>
-            <p className="text-xs uppercase tracking-[0.18em] text-soft">{post.category}</p>
-            <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">{post.title}</h1>
-            <p className="mt-4 text-sm text-soft">
-              {post.publishedDate} • {post.readingTime}
-            </p>
-          </div>
-          <div className="relative min-h-[300px] w-full border border-white/10 lg:min-h-[400px]">
-            <Image src={post.image} alt={post.title} fill className="object-cover" priority />
-          </div>
-        </Container>
-      </section>
-      <section className="py-16 sm:py-20">
+      <PageHero eyebrow={post.category} title={post.title} image={post.image} description={post.metaDescription}>
+        <nav className="text-sm font-semibold uppercase tracking-[0.12em] text-soft">
+          <Link href="/" className="hover:text-white">
+            Anasayfa
+          </Link>{" "}
+          /{" "}
+          <Link href="/blog" className="hover:text-white">
+            Blog
+          </Link>{" "}
+          / <span className="text-white">{post.publishedDate} • {post.readingTime}</span>
+        </nav>
+      </PageHero>
+      <section className="bg-ink py-20 sm:py-28">
         <Container className="grid gap-8 lg:grid-cols-[0.72fr_0.28fr]">
           <article className="space-y-8">
             {post.sections.map((section, index) => (

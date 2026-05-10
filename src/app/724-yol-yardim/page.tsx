@@ -1,5 +1,6 @@
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
+import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -30,14 +31,13 @@ export default function RoadAssistancePage() {
           buildFaqSchema(roadAssistanceFaqs)
         ]}
       />
-      <section className="border-b border-white/10 bg-gradient-to-r from-accent/20 to-graphite py-16 sm:py-24">
-        <Container>
-          <h1 className="text-4xl font-semibold text-white sm:text-5xl">Bursa Nilüfer 7/24 Yol Yardım Hizmeti</h1>
-          <p className="mt-6 max-w-4xl text-lg leading-8 text-soft">
-            Acil durumda hızlı iletişim önemlidir. Telefon numaramız görünür, WhatsApp ve konum paylaşımı hazır şekilde
-            sizi bekliyor.
-          </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+      <PageHero
+        eyebrow="Acil destek"
+        title="Bursa Nilüfer 7/24 Yol Yardım Hizmeti"
+        image="/images/road-assistance.png"
+        description="Acil durumda hızlı iletişim önemlidir. Telefon numaramız görünür, WhatsApp ve konum paylaşımı hazır şekilde sizi bekliyor."
+      >
+          <div className="flex flex-col gap-3 sm:flex-row">
             <Button
               href={siteConfig.phoneLink}
               trackingEvent="phone_click"
@@ -64,9 +64,8 @@ export default function RoadAssistancePage() {
               Konum Paylaş / Yol Tarifi
             </Button>
           </div>
-        </Container>
-      </section>
-      <section className="py-16 sm:py-20">
+      </PageHero>
+      <section className="bg-ink py-20 sm:py-28">
         <Container className="grid gap-6 lg:grid-cols-2">
           <Card className="p-6">
             <h2 className="text-2xl font-semibold text-white">Sık karşılaşılan durumlar</h2>

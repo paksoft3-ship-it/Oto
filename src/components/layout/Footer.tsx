@@ -8,11 +8,11 @@ import { Container } from "@/components/ui/Container";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-black py-14">
+    <footer className="border-t border-accent/15 bg-[#070f17] py-16">
       <Container>
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h2 className="text-lg font-semibold text-white">{siteConfig.name}</h2>
+            <h2 className="text-xl font-black text-white">{siteConfig.name}</h2>
             <p className="mt-3 text-sm text-soft">{siteConfig.businessType}</p>
             <p className="mt-2 text-sm text-soft">{siteConfig.brands.slice(0, 3).join(" • ")}</p>
             <p className="mt-2 text-sm text-soft">Telefon: {siteConfig.phoneDisplay}</p>
@@ -33,7 +33,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">Hızlı Linkler</h2>
+            <h2 className="text-sm font-black uppercase tracking-[0.18em] text-white">Hızlı Linkler</h2>
             <ul className="mt-4 space-y-3 text-sm text-soft">
               {siteConfig.navItems.map((item) => (
                 <li key={item.href}>
@@ -42,11 +42,21 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href="/site-haritasi" className="hover:text-white">
+                  Site Haritası
+                </Link>
+              </li>
+              <li>
+                <Link href="/sitemap.xml" className="hover:text-white">
+                  XML Sitemap
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">Hizmetler</h2>
+            <h2 className="text-sm font-black uppercase tracking-[0.18em] text-white">Hizmetler</h2>
             <ul className="mt-4 space-y-3 text-sm text-soft">
               {services.slice(0, 6).map((service) => (
                 <li key={service.slug}>
@@ -59,7 +69,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">Markalar ve İletişim</h2>
+            <h2 className="text-sm font-black uppercase tracking-[0.18em] text-white">Markalar ve İletişim</h2>
             <ul className="mt-4 space-y-3 text-sm text-soft">
               {brands.map((brand) => (
                 <li key={brand.slug}>

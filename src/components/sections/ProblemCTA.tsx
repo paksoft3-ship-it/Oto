@@ -12,18 +12,19 @@ const problems = [
 
 export function ProblemCTA() {
   return (
-    <section className="border-y border-white/10 bg-graphite py-16 sm:py-20">
+    <section className="border-y border-metal bg-surface-low py-20 sm:py-28">
       <Container>
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <h2 className="text-3xl font-semibold text-white">Sorun odaklı hızlı yönlendirme</h2>
+            <span className="section-kicker">Belirtiye göre servis</span>
+            <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">Sorun odaklı hızlı yönlendirme</h2>
             <p className="mt-4 text-base leading-8 text-soft">
               Sorunun tam adını bilmiyor olabilirsiniz. Belirtiyi paylaşın, uygun hizmet başlığına birlikte yönlendirelim.
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
             {problems.map((problem) => (
-              <div key={problem} className="border border-white/10 px-4 py-4 text-sm text-white">
+              <div key={problem} className="border border-metal bg-surface-mid px-4 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-white">
                 {problem}
               </div>
             ))}

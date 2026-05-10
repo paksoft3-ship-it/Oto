@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { FinalCTA } from "@/components/sections/FinalCTA";
+import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
@@ -24,16 +25,13 @@ export default function BlogPage() {
           { name: "Blog", path: "/blog" }
         ])}
       />
-      <section className="border-b border-white/10 bg-graphite py-16 sm:py-24">
-        <Container>
-          <h1 className="text-4xl font-semibold text-white sm:text-5xl">Oto Bakım ve Arıza Rehberi</h1>
-          <p className="mt-6 max-w-4xl text-lg leading-8 text-soft">
-            Bursa Nilüfer oto servis ve bakım süreçleri hakkında profesyonel, yerel ve anlaşılır içerikleri burada
-            bulabilirsiniz.
-          </p>
-        </Container>
-      </section>
-      <section className="py-16 sm:py-20">
+      <PageHero
+        eyebrow="Teknik rehber"
+        title="Oto Bakım ve Arıza Rehberi"
+        image="/images/blog-main.png"
+        description="Bursa Nilüfer oto servis ve bakım süreçleri hakkında profesyonel, yerel ve anlaşılır içerikleri burada bulabilirsiniz."
+      />
+      <section className="bg-ink py-20 sm:py-28">
         <Container>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {blogPosts.map((post) => (

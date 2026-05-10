@@ -1,5 +1,6 @@
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
+import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
@@ -27,19 +28,16 @@ export default function LocationPage() {
           buildFaqSchema(homeFaqs)
         ]}
       />
-      <section className="border-b border-white/10 bg-graphite py-16 sm:py-24">
-        <Container>
-          <h1 className="text-4xl font-semibold text-white sm:text-5xl">Nilüfer Oto Tamir, Bakım ve Onarım Servisi</h1>
-          <p className="mt-6 max-w-4xl text-lg leading-8 text-soft">
-            Nilüfer oto tamir, Nilüfer oto servis, Nilüfer arıza tespit ve Nilüfer periyodik bakım ihtiyaçları için
-            ERZ GARAGE; hızlı iletişim ve premium araç odaklı servis yaklaşımı sunar.
-          </p>
-        </Container>
-      </section>
-      <section className="py-16 sm:py-20">
+      <PageHero
+        eyebrow="Bursa Nilüfer"
+        title="Nilüfer Oto Tamir, Bakım ve Onarım Servisi"
+        image="/images/hero-garage.png"
+        description="Nilüfer oto tamir, Nilüfer oto servis, Nilüfer arıza tespit ve Nilüfer periyodik bakım ihtiyaçları için ERZ GARAGE; hızlı iletişim ve premium araç odaklı servis yaklaşımı sunar."
+      />
+      <section className="bg-ink py-20 sm:py-28">
         <Container className="grid gap-6 lg:grid-cols-2">
           <Card className="p-6">
-            <h2 className="text-2xl font-semibold text-white">Yerel SEO odaklı servis kapsamı</h2>
+            <h2 className="text-2xl font-semibold text-white">Nilüfer ve çevresi için servis kapsamı</h2>
             <p className="mt-4 text-base leading-8 text-soft">
               Bursa Nilüfer oto servis aramalarında arıza tespit, bakım, mekanik onarım, Bursa fren tamiri ve Bursa
               oto elektrik gibi ana ihtiyaçlara çözüm odaklı içerik sunuyoruz.

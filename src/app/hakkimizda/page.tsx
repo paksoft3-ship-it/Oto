@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
+import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
@@ -26,23 +26,14 @@ export default function AboutPage() {
           buildFaqSchema(aboutFaqs)
         ]}
       />
-      <section className="border-b border-white/10 bg-graphite py-16 sm:py-24">
-        <Container className="grid gap-10 lg:grid-cols-[1fr_1fr] items-center">
-          <div>
-            <h1 className="text-4xl font-semibold text-white sm:text-5xl">ERZ GARAGE Bursa Nilüfer</h1>
-            <p className="mt-6 text-lg leading-8 text-soft">
-              ERZ GARAJ olarak araçlarınız için profesyonel oto tamir, bakım ve onarım hizmeti sunuyoruz. BMW,
-              Mercedes, Audi başta olmak üzere birçok araç markasında arıza tespit, periyodik bakım, mekanik onarım ve
-              teknik servis hizmetleri vermekteyiz.
-            </p>
-          </div>
-          <div className="relative min-h-[300px] w-full border border-white/10 lg:min-h-[400px]">
-            <Image src="/images/hakkimizda.png" alt="ERZ GARAGE Hakkımızda" fill className="object-cover" priority />
-          </div>
-        </Container>
-      </section>
+      <PageHero
+        eyebrow="Hakkımızda"
+        title="ERZ GARAGE Bursa Nilüfer"
+        image="/images/hakkimizda.png"
+        description="ERZ GARAJ olarak araçlarınız için profesyonel oto tamir, bakım ve onarım hizmeti sunuyoruz. BMW, Mercedes, Audi başta olmak üzere birçok araç markasında arıza tespit, periyodik bakım, mekanik onarım ve teknik servis hizmetleri vermekteyiz."
+      />
 
-      <section className="py-16 sm:py-20">
+      <section className="bg-ink py-20 sm:py-28">
         <Container className="grid gap-6 lg:grid-cols-2">
           <Card className="p-6">
             <h2 className="text-2xl font-semibold text-white">Hikayemiz</h2>

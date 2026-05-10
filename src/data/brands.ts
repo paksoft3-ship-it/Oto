@@ -103,7 +103,7 @@ export const brands: Brand[] = [
     whyChooseUs: [
       "Audi araçlar için bakım ve onarım desteğine odaklı yaklaşım",
       "Servis ihtiyacını netleştiren arıza tespit akışı",
-      "Bursa oto tamir arayan kullanıcılar için güçlü CTA yapısı"
+      "Bursa oto tamir arayan Audi kullanıcıları için hızlı ve net servis yönlendirmesi"
     ],
     faqs: [
       {

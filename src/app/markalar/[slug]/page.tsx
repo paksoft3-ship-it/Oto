@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
+import { PageHero } from "@/components/sections/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -68,72 +69,93 @@ export default async function BrandPage({ params }: Props) {
   return (
     <>
       <JsonLd data={[breadcrumb, faqSchema, serviceSchema]} />
-      <section className="border-b border-white/10 bg-graphite py-16 sm:py-24">
-        <Container className="grid gap-10 lg:grid-cols-[1fr_1fr] items-center">
+      <PageHero eyebrow="Premium marka servisi" title={brand.h1} image={brand.image} description={brand.intro}>
+        <nav className="mb-6 text-sm font-semibold uppercase tracking-[0.12em] text-soft">
+          <Link href="/" className="hover:text-white">
+            Anasayfa
+          </Link>{" "}
+          / <span className="text-white">{brand.brandName} Özel Servis</span>
+        </nav>
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <Button
+            href={siteConfig.phoneLink}
+            trackingEvent="brand_page_cta_click"
+            trackingParams={{ brand_name: brand.brandName, action_type: "phone" }}
+          >
+            Hemen Ara
+          </Button>
+          <Button
+            href={siteConfig.whatsappUrl}
+            external
+            variant="secondary"
+            trackingEvent="brand_page_cta_click"
+            trackingParams={{ brand_name: brand.brandName, action_type: "whatsapp" }}
+          >
+            WhatsApp’tan Yaz
+          </Button>
+        </div>
+      </PageHero>
+
+      <section className="bg-ink py-20 sm:py-28">
+        <Container>
+          <span className="section-kicker">Marka servis kapsamı</span>
+          <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
+            {brand.brandName} için öne çıkan hizmetler
+          </h2>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {brand.services.map((service, index) => (
+              <Card key={service} className={index === 0 ? "p-7 md:col-span-2" : "p-7"}>
+                <div className="mb-8 flex items-start justify-between">
+                  <span className="text-3xl text-accent">{["⌕", "⚙", "⌁", "✚", "▤"][index % 5]}</span>
+                  <span className="font-mono text-xs text-soft/60">{String(index + 1).padStart(2, "0")}</span>
+                </div>
+                <h3 className="text-xl font-black text-white">{service}</h3>
+                <p className="mt-3 text-sm leading-7 text-soft">
+                  {brand.brandName} araç karakterine uygun teknik kontrol ve servis yönlendirmesi.
+                </p>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-y border-metal bg-surface-low py-20 sm:py-28">
+        <Container className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
-            <nav className="mb-6 text-sm text-soft">
-              <Link href="/" className="hover:text-white">
-                Anasayfa
-              </Link>{" "}
-              / <span className="text-white">{brand.brandName} Özel Servis</span>
-            </nav>
-            <h1 className="text-4xl font-semibold text-white sm:text-5xl">{brand.h1}</h1>
-            <p className="mt-6 text-lg leading-8 text-soft">{brand.intro}</p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button
-                href={siteConfig.phoneLink}
-                trackingEvent="brand_page_cta_click"
-                trackingParams={{ brand_name: brand.brandName, action_type: "phone" }}
-              >
-                Hemen Ara
-              </Button>
-              <Button
-                href={siteConfig.whatsappUrl}
-                external
-                variant="secondary"
-                trackingEvent="brand_page_cta_click"
-                trackingParams={{ brand_name: brand.brandName, action_type: "whatsapp" }}
-              >
-                WhatsApp’tan Yaz
-              </Button>
+            <span className="section-kicker">Neden ERZ GARAGE?</span>
+            <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
+              {brand.brandName} araçlar için teknik hassasiyet
+            </h2>
+            <div className="mt-8 space-y-6">
+              {brand.whyChooseUs.map((item) => (
+                <div key={item} className="flex gap-4 border-b border-white/10 pb-5 last:border-none">
+                  <span className="mt-1 text-accent">✚</span>
+                  <p className="text-base leading-7 text-soft">{item}</p>
+                </div>
+              ))}
             </div>
           </div>
-          <div className="relative min-h-[300px] w-full border border-white/10 lg:min-h-[400px]">
-            <Image src={brand.image} alt={brand.h1} fill className="object-cover" priority />
+          <div className="relative min-h-[420px] overflow-hidden border border-metal bg-ink">
+            <Image src={brand.image} alt={`${brand.brandName} özel servis yaklaşımı`} fill className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6 right-6 font-mono text-xs uppercase tracking-[0.12em] text-soft">
+              &gt; {brand.brandName}_service_protocol / diagnostic_active
+            </div>
           </div>
         </Container>
       </section>
 
-      <section className="py-16 sm:py-20">
-        <Container className="grid gap-6 lg:grid-cols-2">
-          <Card className="p-6">
-            <h2 className="text-2xl font-semibold text-white">{brand.brandName} için öne çıkan hizmetler</h2>
-            <ul className="mt-4 space-y-3 text-soft">
-              {brand.services.map((service) => (
-                <li key={service}>{service}</li>
-              ))}
-            </ul>
-          </Card>
-          <Card className="p-6">
-            <h2 className="text-2xl font-semibold text-white">Sık görülen ihtiyaçlar</h2>
-            <ul className="mt-4 space-y-3 text-soft">
-              {brand.commonProblems.map((problem) => (
-                <li key={problem}>{problem}</li>
-              ))}
-            </ul>
-          </Card>
-        </Container>
-      </section>
-
-      <section className="border-y border-white/10 bg-graphite py-16 sm:py-20">
+      <section className="bg-ink py-20 sm:py-28">
         <Container>
-          <h2 className="text-3xl font-semibold text-white">Neden ERZ GARAGE?</h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            {brand.whyChooseUs.map((item) => (
-              <Card key={item} className="p-6">
-                <h3 className="text-lg font-semibold text-white">{brand.brandName}</h3>
-                <p className="mt-3 text-sm leading-7 text-soft">{item}</p>
-              </Card>
+          <div className="text-center">
+            <span className="section-kicker justify-center">Yaygın ihtiyaçlar</span>
+            <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">Sık görülen servis başlıkları</h2>
+          </div>
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {brand.commonProblems.map((problem) => (
+              <div key={problem} className="border border-metal bg-surface-mid px-5 py-5 text-center text-sm font-semibold text-white">
+                {problem}
+              </div>
             ))}
           </div>
         </Container>

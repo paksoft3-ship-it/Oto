@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/724-yol-yardim`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/iletisim`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${baseUrl}/site-haritasi`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/bolgeler/nilufer-oto-tamir`, lastModified: now, changeFrequency: "monthly", priority: 0.8 }
   ];
 

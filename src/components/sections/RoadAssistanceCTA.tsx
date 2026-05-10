@@ -5,12 +5,21 @@ import { Container } from "@/components/ui/Container";
 
 export function RoadAssistanceCTA() {
   return (
-    <section className="py-16 sm:py-20">
+    <section className="bg-ink py-20 sm:py-28">
       <Container>
-        <div className="grid overflow-hidden border border-accent/30 bg-graphite lg:grid-cols-[1.2fr_0.8fr]">
-          <div className="p-8 sm:p-12">
-            <h2 className="text-3xl font-semibold text-white">Bursa Nilüfer 7/24 Yol Yardım</h2>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-soft">
+        <div className="relative overflow-hidden border border-accent/35 bg-graphite">
+          <Image
+            src="/images/road-assistance.png"
+            alt="Bursa Nilüfer 7/24 Yol Yardım"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/30" />
+          <div className="relative max-w-3xl p-8 sm:p-12 lg:p-16">
+            <span className="section-kicker">Acil destek</span>
+            <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">Bursa Nilüfer 7/24 Yol Yardım</h2>
+            <p className="mt-5 max-w-3xl text-base leading-8 text-soft">
               Araç çalışmıyor, akü bitti veya yolda kaldınız. Konumunuzu paylaşın, size uygun yönlendirme için hızlıca
               iletişime geçelim.
             </p>
@@ -35,14 +44,6 @@ export function RoadAssistanceCTA() {
                 Yol Yardım Sayfası
               </Button>
             </div>
-          </div>
-          <div className="relative min-h-[300px] bg-ink">
-            <Image
-              src="/images/road-assistance.png"
-              alt="Bursa Nilüfer 7/24 Yol Yardım"
-              fill
-              className="object-cover"
-            />
           </div>
         </div>
       </Container>

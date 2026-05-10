@@ -20,11 +20,11 @@ type ButtonProps = {
 
 const styles = {
   primary:
-    "bg-accent text-white hover:bg-red-700 focus-visible:ring-accent/60",
+    "bg-accent text-white shadow-red hover:bg-red-700 focus-visible:ring-accent/60",
   secondary:
-    "border border-white/15 bg-white/5 text-white hover:bg-white/10 focus-visible:ring-white/30",
+    "border-2 border-metal bg-transparent text-white hover:border-accent hover:text-white focus-visible:ring-white/30",
   ghost:
-    "border border-metal bg-transparent text-soft hover:border-white/30 hover:text-white focus-visible:ring-white/30"
+    "border border-white/10 bg-surface-mid/70 text-soft hover:border-white/30 hover:text-white focus-visible:ring-white/30"
 };
 
 export function Button({
@@ -39,7 +39,7 @@ export function Button({
   trackingParams
 }: ButtonProps) {
   const baseClassName = clsx(
-    "inline-flex min-h-11 items-center justify-center gap-2 px-5 py-3 text-sm font-semibold uppercase tracking-[0.12em] whitespace-nowrap transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-ink",
+    "inline-flex min-h-12 items-center justify-center gap-2 px-6 py-4 text-xs font-extrabold uppercase tracking-[0.12em] whitespace-nowrap transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-ink",
     styles[variant],
     className
   );

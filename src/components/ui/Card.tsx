@@ -10,7 +10,7 @@ export function Card({ children, className }: CardProps) {
   return (
     <div
       className={clsx(
-        "border border-white/10 bg-graphite shadow-panel transition-colors duration-200",
+        "technical-panel transition-colors duration-200 hover:border-accent/70",
         className
       )}
     >

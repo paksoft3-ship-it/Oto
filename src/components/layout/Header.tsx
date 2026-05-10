@@ -11,11 +11,11 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-ink/95 backdrop-blur shadow-header">
+    <header className="sticky top-0 z-50 border-b border-accent/10 bg-surface/95 shadow-header backdrop-blur-md">
       <div className="mx-auto flex max-w-shell items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="shrink-0" aria-label="ERZ GARAGE anasayfa">
-          <div className="text-lg font-semibold tracking-[0.18em] text-white">{siteConfig.shortName}</div>
-          <div className="text-xs uppercase tracking-[0.28em] text-soft">{siteConfig.subtitle}</div>
+          <div className="text-xl font-black text-accent">{siteConfig.shortName}</div>
+          <div className="text-[10px] font-bold uppercase tracking-[0.24em] text-soft">{siteConfig.subtitle}</div>
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Masaüstü menü">
@@ -23,7 +23,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-soft transition hover:text-white focus:outline-none focus-visible:text-white"
+              className="text-xs font-bold uppercase tracking-[0.12em] text-soft transition hover:text-accent focus:outline-none focus-visible:text-accent"
             >
               {item.label}
             </Link>
@@ -33,6 +33,7 @@ export function Header() {
         <div className="hidden lg:block">
           <Button
             href={siteConfig.phoneLink}
+            className="min-h-10 px-4 py-2"
             ariaLabel="Hemen ara"
             trackingEvent="phone_click"
             trackingParams={{ location: "header", phone: siteConfig.phoneDigits }}

@@ -11,7 +11,7 @@ export function ContactForm() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     trackEvent("form_submit_attempt", { form_name: "contact_form" });
-    setStatus("Talebiniz için teşekkür ederiz. Form altyapısı API entegrasyonuna hazır şekilde hazırlanmıştır.");
+    setStatus("Talebiniz için teşekkür ederiz. Ekibimiz en kısa sürede sizinle iletişime geçecektir.");
   };
 
   return (
