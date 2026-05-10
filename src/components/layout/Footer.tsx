@@ -8,7 +8,7 @@ import { Container } from "@/components/ui/Container";
 
 export function Footer() {
   return (
-    <footer className="border-t border-accent/15 bg-[#070f17] py-16">
+    <footer className="border-t border-accent/15 bg-[#070f17] pb-[calc(8rem+env(safe-area-inset-bottom))] pt-16 lg:py-16">
       <Container>
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
