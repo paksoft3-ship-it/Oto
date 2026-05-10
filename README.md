@@ -113,3 +113,4 @@ Bu alanları güncellemek için:
 - BMW, Mercedes ve Audi için resmi logo kullanılmaz; metin tabanlı anlatım tercih edilir.
 # Oto
 # Oto
+# Auto
