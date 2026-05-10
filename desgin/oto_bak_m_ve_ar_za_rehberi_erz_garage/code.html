@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Oto Bakım ve Arıza Rehberi - ERZ GARAGE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#ffb3ae",
+                        "on-background": "#dbe3ef",
+                        "on-secondary-fixed": "#171c23",
+                        "inverse-surface": "#dbe3ef",
+                        "tertiary-fixed": "#dbe3f0",
+                        "on-tertiary-fixed-variant": "#3f4752",
+                        "on-primary": "#68000c",
+                        "outline-variant": "#5d3f3d",
+                        "tertiary-container": "#6c747f",
+                        "on-tertiary": "#29313b",
+                        "error-container": "#93000a",
+                        "on-tertiary-container": "#f9faff",
+                        "surface-container-highest": "#2e363e",
+                        "primary": "#ffb3ae",
+                        "on-primary-fixed-variant": "#930015",
+                        "primary-fixed": "#ffdad7",
+                        "on-secondary-container": "#b1b5bf",
+                        "surface-dim": "#0c141c",
+                        "primary-container": "#e11d2e",
+                        "error": "#ffb4ab",
+                        "surface": "#0c141c",
+                        "on-secondary": "#2c3138",
+                        "surface-variant": "#2e363e",
+                        "surface-container-lowest": "#070f17",
+                        "surface-container-low": "#141c24",
+                        "surface-tint": "#ffb3ae",
+                        "surface-container": "#182029",
+                        "on-surface": "#dbe3ef",
+                        "secondary-fixed": "#dee2ec",
+                        "on-tertiary-fixed": "#141c25",
+                        "on-error": "#690005",
+                        "background": "#0c141c",
+                        "tertiary-fixed-dim": "#bfc7d4",
+                        "surface-container-high": "#232b33",
+                        "on-surface-variant": "#e6bdb9",
+                        "on-primary-fixed": "#410004",
+                        "outline": "#ad8885",
+                        "secondary": "#c2c7d0",
+                        "secondary-container": "#42474f",
+                        "on-secondary-fixed-variant": "#42474f",
+                        "inverse-on-surface": "#29313a",
+                        "on-error-container": "#ffdad6",
+                        "inverse-primary": "#c0001f",
+                        "on-primary-container": "#fff8f7",
+                        "secondary-fixed-dim": "#c2c7d0",
+                        "tertiary": "#bfc7d4",
+                        "surface-bright": "#323a43"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "max-width": "1280px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "technical-mono": ["JetBrains Mono"],
+                        "headline-xl": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "label-caps": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "technical-mono": ["14px", { "lineHeight": "1.5", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="bg-surface/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/10 shadow-sm">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-container-max-width mx-auto h-20">
+<div class="font-headline-md text-headline-md font-extrabold tracking-tighter text-primary">
+                ERZ GARAGE
+            </div>
+<div class="hidden md:flex items-center space-x-6">
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps hover:bg-primary/10 px-2 py-1 rounded" href="#">Anasayfa</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps hover:bg-primary/10 px-2 py-1 rounded" href="#">Hakkımızda</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps hover:bg-primary/10 px-2 py-1 rounded" href="#">Hizmetler</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps hover:bg-primary/10 px-2 py-1 rounded" href="#">Markalar</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps hover:bg-primary/10 px-2 py-1 rounded" href="#">Yol Yardım</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-caps text-label-caps hover:bg-primary/10 px-2 py-1 rounded" href="#">İletişim</a>
+</div>
+<div class="flex items-center">
+<button class="bg-primary-container text-on-primary-container px-4 py-2 rounded-DEFAULT font-label-caps text-label-caps hover:bg-primary-container/90 transition-colors border-b-2 border-transparent hover:border-on-primary-container/20">Hemen Ara</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-24 pb-margin-desktop px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<!-- Hero Section -->
+<header class="mb-16 md:mb-24 text-center mt-12">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-4">Oto Bakım ve Arıza Rehberi</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">Aracınızın bakımı, arıza belirtileri ve güvenli sürüş için faydalı bilgiler.</p>
+</header>
+<!-- Featured Article -->
+<section class="mb-16 md:mb-24">
+<div class="bg-surface-container-low border border-surface-variant rounded-lg overflow-hidden flex flex-col md:flex-row group cursor-pointer transition-colors hover:bg-surface-container">
+<div class="md:w-2/3 h-64 md:h-auto relative bg-surface-container-highest">
+<img alt="Arıza Lambası Neden Yanar?" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A close-up, high-contrast shot of a modern car dashboard with a bright amber check engine light illuminated. The interior is dark, sleek, and technical, emphasizing the high-performance German automotive theme with deep blacks and metallic gray accents. The glowing indicator provides a stark, urgent contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDXGeykM0IXjS3A7Elcy1tPbTZMuCyilUeYxrmIqEOEwum1zledr1HLHdP1vhJXCH2TAA36mxswZbjh1WWFx95E1OF0B8pKVFYZCTMrXy3thWsM2te1cyLD6Cc6YRkpqj83n3BZAHvAI6nT6pYzCFv_82qR9S9XrZ_keav3YUczLHZHKXAEBvbJtfhO7GbSm01wW-WwiPWj5YwMjcAK_WZF3f6uAospHV6Zl_Uj3g-bTTzsiBErkQ2jQ3NddxRhUHnpf5_Guw6xtQ"/>
+</div>
+<div class="md:w-1/3 p-6 md:p-8 flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-primary-container mb-3 inline-block">Öne Çıkan • Arıza Tespit</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4 group-hover:text-primary transition-colors">Arıza Lambası Neden Yanar?</h2>
+<p class="font-body-md text-body-md text-secondary mb-6 flex-grow">Gösterge panelinizde yanan arıza lambalarının ne anlama geldiğini ve ilk etapta neler yapmanız gerektiğini teknik detaylarıyla açıklıyoruz.</p>
+<a class="font-technical-mono text-technical-mono text-primary flex items-center group/btn" href="#">
+                        Devamını Oku
+                        <span class="material-symbols-outlined ml-2 text-lg transform group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Category Filters -->
+<section class="mb-12 border-b border-surface-variant pb-4 overflow-x-auto hide-scrollbar">
+<div class="flex space-x-2 min-w-max">
+<button class="px-4 py-2 bg-primary/10 text-primary border-b-2 border-primary font-label-caps text-label-caps transition-colors">Tümü</button>
+<button class="px-4 py-2 text-secondary hover:text-on-surface hover:bg-surface-container font-label-caps text-label-caps rounded-DEFAULT transition-colors">Arıza Tespit</button>
+<button class="px-4 py-2 text-secondary hover:text-on-surface hover:bg-surface-container font-label-caps text-label-caps rounded-DEFAULT transition-colors">Periyodik Bakım</button>
+<button class="px-4 py-2 text-secondary hover:text-on-surface hover:bg-surface-container font-label-caps text-label-caps rounded-DEFAULT transition-colors">Fren</button>
+<button class="px-4 py-2 text-secondary hover:text-on-surface hover:bg-surface-container font-label-caps text-label-caps rounded-DEFAULT transition-colors">Akü</button>
+<button class="px-4 py-2 text-secondary hover:text-on-surface hover:bg-surface-container font-label-caps text-label-caps rounded-DEFAULT transition-colors">Motor</button>
+<button class="px-4 py-2 text-secondary hover:text-on-surface hover:bg-surface-container font-label-caps text-label-caps rounded-DEFAULT transition-colors">Yol Yardım</button>
+</div>
+</section>
+<!-- Blog Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-24">
+<!-- Article Card 1 -->
+<article class="bg-surface border border-surface-variant rounded-lg overflow-hidden group hover:border-outline transition-colors flex flex-col h-full">
+<div class="h-48 bg-surface-container-highest relative overflow-hidden">
+<img alt="Araç Arıza Lambası" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" data-alt="A macro shot of a sophisticated car engine diagnostic tool connected to an OBD2 port in a dimly lit garage environment. The scene is dominated by deep black and graphite tones, with a sharp electric red light glowing from the diagnostic tool, highlighting the high-tech, precision engineering aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQENsGLKYSUuScBDJHAHOAVe78HiE1Wikl6vYlxzUJnNC9lMQH7A2aq1trEJc1wZQbgPwXye-dbGGr1QoYRuPAGMQ_PhVwfk_RfGRqun8nqSWZYsCF3t8iCRbGjkBfO04W6-bw6ZT5Rg4Bg9VqcS9H1aZH6qA95P9Ayedugq5_i2w_HdlPSBWocsBgtG-ZvqORxX2nSQA8VXGez3nulZDJcNVXxIBNc11j1QxkibOs0eQ7voczgslNbCT6mrQbF6kNq05b7eK3zSA"/>
+<div class="absolute top-4 left-4 bg-surface-container/90 backdrop-blur px-2 py-1 border border-surface-variant font-label-caps text-label-caps text-secondary">12 Eki 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="font-label-caps text-label-caps text-primary mb-2">Arıza Tespit</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Araç Arıza Lambası Neden Yanar?</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2 flex-grow">Motor ikaz lambasının yanmasına sebep olan yaygın sensör arızaları ve mekanik problemler hakkında detaylı bir analiz.</p>
+<a class="font-technical-mono text-technical-mono text-secondary group-hover:text-primary mt-auto flex items-center transition-colors" href="#">
+                        İncele <span class="material-symbols-outlined ml-1 text-sm">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="bg-surface border border-surface-variant rounded-lg overflow-hidden group hover:border-outline transition-colors flex flex-col h-full">
+<div class="h-48 bg-surface-container-highest relative overflow-hidden">
+<img alt="Periyodik Bakım" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" data-alt="A highly detailed view of a premium German car engine bay, perfectly clean and illuminated under cold, technical garage lighting. The shot focuses on the precision of the mechanical components, utilizing a high-contrast dark theme with subtle metallic reflections to convey a sense of meticulous maintenance and expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPHY3DwhUmjjniv6sdn4UQUVXVOjKCbQFULI0TRxuYEI9VHTOhQEomNtBgatfcr6rtWrvxeUCSuIrVW6UjUYW7CErIpYfz47jjoR497XaeZOvKs7ljT8x9BLhqQU2tMstEkHUqRJoMxzMAlxDmwLBFs2lNJrFZvmIZAC5aZUc_ZyUYkm85Wk4dYf2DDV8X6SQ9lV7SBTRInnv_U52aqBP1j_xcybkBLFlxOeexflZuQNm8IUSJ0PG0-NDDgyYNEnB7WzAyM0aNaDk"/>
+<div class="absolute top-4 left-4 bg-surface-container/90 backdrop-blur px-2 py-1 border border-surface-variant font-label-caps text-label-caps text-secondary">05 Eki 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="font-label-caps text-label-caps text-primary mb-2">Periyodik Bakım</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Periyodik Bakım Ne Zaman Yapılır?</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2 flex-grow">Marka ve model bazlı kilometre ve yıl bazlı periyodik bakım tabloları, yağ değişim aralıkları ve filtre kontrolleri.</p>
+<a class="font-technical-mono text-technical-mono text-secondary group-hover:text-primary mt-auto flex items-center transition-colors" href="#">
+                        İncele <span class="material-symbols-outlined ml-1 text-sm">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="bg-surface border border-surface-variant rounded-lg overflow-hidden group hover:border-outline transition-colors flex flex-col h-full">
+<div class="h-48 bg-surface-container-highest relative overflow-hidden">
+<img alt="Akü Bittiğinde" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" data-alt="A dramatic close-up of heavy-duty jumper cables attached to a premium car battery terminal. The setting is dark and atmospheric, lit by a single harsh, cold light source that highlights the metallic texture of the clamps. The scene evokes a sense of technical intervention and roadside assistance in a sleek, professional aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoN7hNA2qL7QLYuXi12T1MqxiYkfNSUAjt9X9CTzSfJ70qUSaqnPd0wg8Y77C8kM6qSLh-Zz4zhpUP24_NfsfqapyHO-553aPNAkMoTmJVxE6ygYHc3L1V2QHpUXmjkweJyuq_Adru1KLza5WelOE1MHKo9YXPN3_Zmmauty9KMYeD_LQuA47n2eUMEKhbzqxIvEXUcbKWrteLY_SgPINJnpwu-49h2kiDa8AMZgxrkPcKxmlOAG0oE-Gt6f3kOkXSg0yMW4SKlCE"/>
+<div class="absolute top-4 left-4 bg-surface-container/90 backdrop-blur px-2 py-1 border border-surface-variant font-label-caps text-label-caps text-secondary">28 Eyl 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="font-label-caps text-label-caps text-primary mb-2">Akü &amp; Elektrik</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Akü Bittiğinde Ne Yapılmalı?</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2 flex-grow">Soğuk havalarda sık karşılaşılan akü deşarj durumlarında güvenli takviye yöntemleri ve yeni akü seçim kriterleri.</p>
+<a class="font-technical-mono text-technical-mono text-secondary group-hover:text-primary mt-auto flex items-center transition-colors" href="#">
+                        İncele <span class="material-symbols-outlined ml-1 text-sm">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Article Card 4 -->
+<article class="bg-surface border border-surface-variant rounded-lg overflow-hidden group hover:border-outline transition-colors flex flex-col h-full">
+<div class="h-48 bg-surface-container-highest relative overflow-hidden">
+<img alt="Fren Balataları" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" data-alt="A macro shot of a high-performance ceramic brake disc and a large, red brake caliper visible behind a sleek dark alloy wheel. The lighting is cinematic and low-key, emphasizing the precision engineering and sporty nature of the vehicle components against a dark, graphite background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0uR67SpW1XBKmcPPYIJs-YidoOWj2Fs6zBOkA5hX0SWnXRi0X9-XohqJce_Mg3q14bOOjaAuDwxoCM4JwDqYPm2s3GplZV-WzSuh-I_jMs7tc6JFT7DEGma8XNkpKABckSIeuLa_S59RmcyMxldMxPhm0j__j80JLwMG8cJjXJwuxepieR4k0w-Cy9wb73eRvVtIny8WYKWaitUq1CYCk_8vsjr3Mc9VeKcDlAQfBQ9UuNqGb-y6051o8q8P5P3rW8E3SDcYSgf4"/>
+<div class="absolute top-4 left-4 bg-surface-container/90 backdrop-blur px-2 py-1 border border-surface-variant font-label-caps text-label-caps text-secondary">15 Eyl 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="font-label-caps text-label-caps text-primary mb-2">Fren Sistemi</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Fren Balataları Ne Zaman Değişir?</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2 flex-grow">Fren performansında düşüş, ses yapma sorunları ve güvenli duruş mesafesi için balata değişim periyotları.</p>
+<a class="font-technical-mono text-technical-mono text-secondary group-hover:text-primary mt-auto flex items-center transition-colors" href="#">
+                        İncele <span class="material-symbols-outlined ml-1 text-sm">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Article Card 5 -->
+<article class="bg-surface border border-surface-variant rounded-lg overflow-hidden group hover:border-outline transition-colors flex flex-col h-full">
+<div class="h-48 bg-surface-container-highest relative overflow-hidden">
+<img alt="BMW Arıza Tespit" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" data-alt="An aggressive front-end shot of a modern BMW featuring its iconic kidney grille, heavily shadowed in a dark garage setting. The image uses high contrast, with deep blacks and subtle highlights on the metallic surfaces to project power, luxury, and advanced automotive design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnbs63ZlUhx-SuLrXdyCTnmljEjpmmFeVg2HWXagA_lh6zGxjZ12Ei7QECgpTEQB8F56MX-Y6wMwGqU7fgrs_GeV3FQigo-xMcfL0munc6SJOUFVaO05csh2ceMT9fgmK_tJyuQ-UVP4LcWLnjJ1JwRODy9t5Gh0SCDNSSzlfps16zkkiTN5fNxBf5HEDs0J5gtn1RumbNpm3BJL8RrrPoOoxSUNukzMjIGjxOlE4JaN9t-LVCL85OaiLRbTypn8mZk3XlOXEr3r0"/>
+<div class="absolute top-4 left-4 bg-surface-container/90 backdrop-blur px-2 py-1 border border-surface-variant font-label-caps text-label-caps text-secondary">02 Eyl 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="font-label-caps text-label-caps text-primary mb-2">BMW Uzmanlığı</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">BMW Arıza Tespit Nasıl Yapılır?</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2 flex-grow">Orijinal ISTA yazılımı ile BMW marka araçlarda detaylı arıza teşhisi, kodlama ve yazılım güncellemelerinin önemi.</p>
+<a class="font-technical-mono text-technical-mono text-secondary group-hover:text-primary mt-auto flex items-center transition-colors" href="#">
+                        İncele <span class="material-symbols-outlined ml-1 text-sm">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Article Card 6 -->
+<article class="bg-surface border border-surface-variant rounded-lg overflow-hidden group hover:border-outline transition-colors flex flex-col h-full">
+<div class="h-48 bg-surface-container-highest relative overflow-hidden">
+<img alt="Mercedes Bakım" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" data-alt="A highly focused close-up of a Mercedes-Benz hood ornament catching a sliver of bright, stark light against a completely dark, graphite background. The image exudes exclusivity, precision engineering, and the premium nature of the brand, fitting perfectly into a high-contrast corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzmZEBlxPsbyEbwpKBuSReATCa4FkbTsDDNBb1EWLzulRePvWlb3AlRqllq5a8qzIgw__Vm9RViI3xqwgteU7sZlw0T19MXnnaPztaTA9tsR4MhWQAH59T4WXkBCj4KH3M6XaLAkVKU0F6dzzkHOSsihjff8ku9ni2twR_SPBZxf2oZQSlfazbcyGML8lPK-Zkm8W_t1KvCdmtofMdeqiovKkNq6Y6-Tvo8_KrDP8rz_B4sGumk-KHU2a9Cz9T5qmorZTPpbM_x2A"/>
+<div class="absolute top-4 left-4 bg-surface-container/90 backdrop-blur px-2 py-1 border border-surface-variant font-label-caps text-label-caps text-secondary">20 Ağu 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="font-label-caps text-label-caps text-primary mb-2">Mercedes Uzmanlığı</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Mercedes Bakımda Nelere Dikkat Edilmeli?</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2 flex-grow">XENTRY sistemi ile teşhis ve Mercedes-Benz onaylı spesifik yağ ve filtre kullanımının motor ömrüne etkileri.</p>
+<a class="font-technical-mono text-technical-mono text-secondary group-hover:text-primary mt-auto flex items-center transition-colors" href="#">
+                        İncele <span class="material-symbols-outlined ml-1 text-sm">chevron_right</span>
+</a>
+</div>
+</article>
+</section>
+<!-- Final CTA Block -->
+<section class="bg-surface-container-low border border-surface-variant rounded-lg p-8 md:p-12 text-center relative overflow-hidden">
+<!-- Subtle background accent -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Aracınızda sorun mu var?</h2>
+<p class="font-body-md text-body-md text-secondary mb-8 max-w-lg mx-auto">Uzman ekibimizle iletişime geçerek hızlı arıza tespiti ve profesyonel onarım hizmeti alın.</p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+<button class="w-full sm:w-auto bg-primary-container text-on-primary-container px-6 py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-primary-container/90 transition-colors flex items-center justify-center border border-transparent shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]">
+<span class="material-symbols-outlined mr-2 text-lg">call</span>
+                    Hemen Ara: 0538 585 8157
+                </button>
+<button class="w-full sm:w-auto bg-transparent text-on-surface px-6 py-3 rounded-DEFAULT font-label-caps text-label-caps border-2 border-surface-variant hover:border-outline hover:bg-surface-container transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined mr-2 text-lg">forum</span>
+                    WhatsApp'tan Yaz
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-base md:px-gutter py-12 max-w-container-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-on-surface mb-4">
+                    ERZ GARAGE
+                </div>
+<p class="font-body-md text-body-md text-secondary/80 text-sm">
+                    © 2024 ERZ GARAGE Bursa Nilüfer. Professional Automotive Excellence.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-center">
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded px-1" href="#">Hizmetlerimiz</a>
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded px-1" href="#">BMW Servis</a>
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded px-1" href="#">Mercedes Servis</a>
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded px-1" href="#">Audi Servis</a>
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded px-1" href="#">Yol Yardım</a>
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded px-1" href="#">Gizlilik Politikası</a>
+</div>
+</div>
+</footer>
+</body></html>

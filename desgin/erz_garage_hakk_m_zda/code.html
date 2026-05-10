@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hakkımızda - ERZ GARAGE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#2e363e",
+                      "surface": "#0c141c",
+                      "surface-container-highest": "#2e363e",
+                      "outline-variant": "#5d3f3d",
+                      "surface-container-lowest": "#070f17",
+                      "surface-container-high": "#232b33",
+                      "on-tertiary-container": "#f9faff",
+                      "tertiary-container": "#6c747f",
+                      "on-tertiary-fixed": "#141c25",
+                      "background": "#0c141c",
+                      "tertiary": "#bfc7d4",
+                      "secondary-fixed-dim": "#c3c6ce",
+                      "error": "#ffb4ab",
+                      "on-secondary-fixed-variant": "#43474d",
+                      "on-primary-fixed-variant": "#930015",
+                      "primary-fixed": "#ffdad7",
+                      "outline": "#ad8885",
+                      "on-tertiary-fixed-variant": "#3f4752",
+                      "on-secondary-container": "#b2b5bc",
+                      "secondary": "#c3c6ce",
+                      "on-secondary": "#2d3136",
+                      "surface-container-low": "#141c24",
+                      "secondary-container": "#43474d",
+                      "tertiary-fixed": "#dbe3f0",
+                      "on-primary": "#68000c",
+                      "error-container": "#93000a",
+                      "on-background": "#dbe3ef",
+                      "on-secondary-fixed": "#181c21",
+                      "surface-bright": "#323a43",
+                      "surface-tint": "#ffb3ae",
+                      "primary-fixed-dim": "#ffb3ae",
+                      "on-error": "#690005",
+                      "inverse-surface": "#dbe3ef",
+                      "on-primary-container": "#fff8f7",
+                      "tertiary-fixed-dim": "#bfc7d4",
+                      "inverse-primary": "#c0001f",
+                      "on-tertiary": "#29313b",
+                      "on-surface-variant": "#e6bdb9",
+                      "secondary-fixed": "#e0e2ea",
+                      "surface-container": "#182029",
+                      "on-primary-fixed": "#410004",
+                      "surface-dim": "#0c141c",
+                      "on-error-container": "#ffdad6",
+                      "inverse-on-surface": "#29313a",
+                      "primary-container": "#e11d2e",
+                      "on-surface": "#dbe3ef",
+                      "primary": "#ffb3ae"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "section-gap-md": "80px",
+                      "section-gap-lg": "120px",
+                      "container-max-width": "1280px",
+                      "base": "8px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "display-xl": ["Manrope"],
+                      "body-md": ["Inter"],
+                      "label-caps": ["Inter"],
+                      "headline-lg": ["Manrope"],
+                      "body-lg": ["Inter"],
+                      "headline-lg-mobile": ["Manrope"],
+                      "headline-md": ["Manrope"]
+              },
+              "fontSize": {
+                      "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .bg-card { background-color: theme('colors.surface-variant'); }
+        .border-metallic { border-color: rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant/10 shadow-sm">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-container-max-width mx-auto h-20">
+<div class="font-headline-md text-headline-md font-extrabold tracking-tighter text-primary">
+                ERZ GARAGE
+            </div>
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Anasayfa</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-caps text-label-caps" href="#">Hakkımızda</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Hizmetler</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Markalar</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Yol Yardım</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">İletişim</a>
+</nav>
+<button class="bg-primary-container text-white px-6 py-3 font-label-caps text-label-caps uppercase rounded-DEFAULT hover:bg-inverse-primary hover:border hover:border-white/20 transition-all">
+                Hemen Ara
+            </button>
+</div>
+</header>
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="ERZ Garage Hero" class="w-full h-full object-cover opacity-30 mix-blend-luminosity" data-alt="A dramatic, high-contrast shot of a sleek modern automotive garage interior. Deep shadows and metallic textures dominate the space. Sharp, electric red lighting accents highlight professional diagnostic equipment and a luxury vehicle on a lift. The mood is highly technical, pristine, and authoritative, perfectly matching a dark-mode premium service aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVytMPQwQ_-GbM4BZN57f6YpK0Nm5EGCuqsiR8ScpiLaRI4ENYtq29X2lvUtgkXCBR5O83lAeaq78elwQgfQB5pb0BrwPwYbpTTmqp1XNiuQLW7wkgaXheUbzL9H_nLZpvT1fUetKXJl4VrnRvkzMaK4bzVhshYLfVTLucXhTeF9hgOhexXQhsxPADctmBC8rhN6C8CaX8Tveqv7q0aWJSFAiKD2CwGsH66qgdWA1AtMBL5iuFe4yRZ36Qc0tVFmori3ZC9nOtbmc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-gutter mx-auto">
+<h1 class="font-display-xl text-display-xl text-on-surface mb-6">ERZ GARAGE Bursa Nilüfer</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+                    Profesyonel oto tamir, bakım, onarım ve teknik servis hizmetlerinde güvenilir çözüm ortağınız.
+                </p>
+<div class="flex justify-center gap-4">
+<button class="bg-primary-container text-white px-8 py-4 font-label-caps text-label-caps uppercase rounded-DEFAULT hover:bg-inverse-primary hover:border-t hover:border-white/20 transition-all shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+                        Hemen Ara: 0538 585 8157
+                    </button>
+<button class="bg-transparent border-2 border-surface-variant text-white px-8 py-4 font-label-caps text-label-caps uppercase rounded-DEFAULT hover:bg-surface-variant transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">chat</span>
+                        WhatsApp’tan Yaz
+                    </button>
+</div>
+</div>
+</section>
+<!-- About Text & Image Layout -->
+<section class="py-section-gap-lg px-base md:px-gutter max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Biz Kimiz?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        ERZ GARAJ olarak araçlarınız için profesyonel oto tamir, periyodik bakım, motor rektefiye, mekanik arıza tespiti ve onarım hizmetleri sunuyoruz. Yılların verdiği tecrübe, gelişmiş diagnostik cihazlarımız ve uzman ekibimizle aracınızın performansını ve güvenliğini en üst seviyede tutmayı hedefliyoruz.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Sadece bir tamirhane değil, aracınızın tüm ihtiyaçlarını güvenle karşılayabileceğiniz bir servis noktasıyız. Hem binek hem de hafif ticari araçlarda garantili işçilik, şeffaf fiyatlandırma ve zamanında teslimat prensipleriyle çalışıyoruz. Yolda kaldığınızda ya da aracınızın rutin bakım zamanı geldiğinde ERZ GARAJ her zaman yanınızda.
+                    </p>
+</div>
+<div class="relative">
+<div class="absolute inset-0 bg-primary-container/20 translate-x-4 translate-y-4 rounded-DEFAULT -z-10"></div>
+<img alt="Mechanic working" class="rounded-DEFAULT w-full h-[500px] object-cover border border-metallic" data-alt="Close up of a professional mechanic's hands working on a high-end European car engine. The lighting is focused and clinical, emphasizing the precision of the tools and the metallic sheen of the engine parts. Set against a deeply dark, graphite background, the scene conveys meticulous craftsmanship, technical expertise, and a premium automotive service environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjWqKRxzfoV54LmDLsLXjbrLDIIkzXakD6rocJ5kzxaABkwV7Hc-1-Ys1BlIipjxjTxRNeOjAjKA-wR9ESM4rmtTxbehtklfolSKMLPe2idV9q_LEokIDh2zwfUNEAgG04LFNiLf4BfMkfmR8VpO3xbFhPDdF9MH0GNOCw8XYXwYFEF4v8bJVMSEhQNgHVr60pYOvPTOGVI4TvwDaXQI_SiFoQ-lm5SX0-DRL2dylsWS2EZ3Gz5DwX4wA3N_tbGFuV7YxEIEkBhnY"/>
+</div>
+</div>
+</section>
+<!-- Values Cards -->
+<section class="py-section-gap-md bg-surface-container-low border-y border-metallic">
+<div class="px-base md:px-gutter max-w-container-max-width mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Misyonumuz &amp; Değerlerimiz</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">
+                        Aracınız için doğru teşhis, kaliteli işçilik ve güvenilir servis deneyimi sunmak.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="bg-card p-8 rounded-DEFAULT border border-metallic hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Güven</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Şeffaf süreçler ve dürüst hizmet anlayışı.</p>
+</div>
+<div class="bg-card p-8 rounded-DEFAULT border border-metallic hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">handyman</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Kaliteli işçilik</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Uzman ekip ve garantili parça kullanımı.</p>
+</div>
+<div class="bg-card p-8 rounded-DEFAULT border border-metallic hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">timer</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Hızlı servis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Zamanında teslimat ve etkili çözümler.</p>
+</div>
+<div class="bg-card p-8 rounded-DEFAULT border border-metallic hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Müşteri memnuniyeti</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Her koşulda sizin ve aracınızın yanındayız.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full border-t border-outline-variant/20 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-base md:px-gutter py-section-gap-md max-w-container-max-width mx-auto">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-on-surface mb-4">ERZ GARAGE</div>
+<p class="font-body-md text-body-md text-secondary/80">© 2024 ERZ GARAGE Bursa Nilüfer. Professional Automotive Excellence.</p>
+</div>
+<div>
+<a class="block font-body-md text-body-md text-secondary/80 hover:text-primary transition-all mb-2" href="#">Hizmetlerimiz</a>
+<a class="block font-body-md text-body-md text-secondary/80 hover:text-primary transition-all mb-2" href="#">BMW Servis</a>
+</div>
+<div>
+<a class="block font-body-md text-body-md text-secondary/80 hover:text-primary transition-all mb-2" href="#">Mercedes Servis</a>
+<a class="block font-body-md text-body-md text-secondary/80 hover:text-primary transition-all mb-2" href="#">Audi Servis</a>
+</div>
+<div>
+<a class="block font-body-md text-body-md text-secondary/80 hover:text-primary transition-all mb-2" href="#">Yol Yardım</a>
+<a class="block font-body-md text-body-md text-secondary/80 hover:text-primary transition-all" href="#">Gizlilik Politikası</a>
+</div>
+</div>
+</footer>
+</body></html>

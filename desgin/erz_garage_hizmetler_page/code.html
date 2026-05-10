@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Oto Tamir, Bakım ve Onarım Hizmetleri | ERZ GARAGE Bursa Nilüfer</title>
+<meta content="ERZ GARAGE Bursa Nilüfer’de arıza tespit, periyodik bakım, mekanik onarım, fren, elektrik, yağ değişimi, akü değişimi, şanzıman ve 7/24 yol yardım hizmetleri." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "secondary": "#c3c6ce",
+                  "secondary-fixed-dim": "#c3c6ce",
+                  "primary-fixed": "#ffdad7",
+                  "on-surface-variant": "#e6bdb9",
+                  "secondary-fixed": "#e0e2ea",
+                  "on-error": "#690005",
+                  "surface-bright": "#323a43",
+                  "background": "#0c141c",
+                  "on-secondary-fixed": "#181c21",
+                  "inverse-on-surface": "#29313a",
+                  "on-primary-fixed-variant": "#930015",
+                  "tertiary": "#bfc7d4",
+                  "on-tertiary-fixed-variant": "#3f4752",
+                  "surface": "#0c141c",
+                  "primary-fixed-dim": "#ffb3ae",
+                  "surface-container-low": "#141c24",
+                  "secondary-container": "#43474d",
+                  "surface-container-high": "#232b33",
+                  "error": "#ffb4ab",
+                  "on-secondary": "#2d3136",
+                  "inverse-surface": "#dbe3ef",
+                  "surface-container-highest": "#2e363e",
+                  "on-primary-container": "#fff8f7",
+                  "surface-variant": "#2e363e",
+                  "on-surface": "#dbe3ef",
+                  "on-error-container": "#ffdad6",
+                  "error-container": "#93000a",
+                  "surface-dim": "#0c141c",
+                  "surface-tint": "#ffb3ae",
+                  "primary": "#ffb3ae",
+                  "surface-container-lowest": "#070f17",
+                  "tertiary-fixed": "#dbe3f0",
+                  "surface-container": "#182029",
+                  "on-primary-fixed": "#410004",
+                  "inverse-primary": "#c0001f",
+                  "primary-container": "#e11d2e",
+                  "on-tertiary-container": "#f9faff",
+                  "on-secondary-container": "#b2b5bc",
+                  "on-tertiary": "#29313b",
+                  "outline": "#ad8885",
+                  "tertiary-fixed-dim": "#bfc7d4",
+                  "on-secondary-fixed-variant": "#43474d",
+                  "on-primary": "#68000c",
+                  "on-background": "#dbe3ef",
+                  "outline-variant": "#5d3f3d",
+                  "tertiary-container": "#6c747f",
+                  "on-tertiary-fixed": "#141c25"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "container-max-width": "1280px",
+                  "base": "8px",
+                  "section-gap-md": "80px",
+                  "section-gap-lg": "120px",
+                  "gutter": "24px",
+                  "margin-mobile": "16px"
+          },
+          "fontFamily": {
+                  "body-lg": [
+                          "Inter"
+                  ],
+                  "headline-lg-mobile": [
+                          "Manrope"
+                  ],
+                  "label-caps": [
+                          "Inter"
+                  ],
+                  "headline-md": [
+                          "Manrope"
+                  ],
+                  "headline-lg": [
+                          "Manrope"
+                  ],
+                  "display-xl": [
+                          "Manrope"
+                  ],
+                  "body-md": [
+                          "Inter"
+                  ]
+          },
+          "fontSize": {
+                  "body-lg": [
+                          "18px",
+                          {
+                                  "lineHeight": "1.6",
+                                  "fontWeight": "400"
+                          }
+                  ],
+                  "headline-lg-mobile": [
+                          "32px",
+                          {
+                                  "lineHeight": "1.2",
+                                  "fontWeight": "700"
+                          }
+                  ],
+                  "label-caps": [
+                          "12px",
+                          {
+                                  "lineHeight": "1.0",
+                                  "letterSpacing": "0.1em",
+                                  "fontWeight": "700"
+                          }
+                  ],
+                  "headline-md": [
+                          "24px",
+                          {
+                                  "lineHeight": "1.3",
+                                  "fontWeight": "600"
+                          }
+                  ],
+                  "headline-lg": [
+                          "40px",
+                          {
+                                  "lineHeight": "1.2",
+                                  "letterSpacing": "-0.01em",
+                                  "fontWeight": "700"
+                          }
+                  ],
+                  "display-xl": [
+                          "64px",
+                          {
+                                  "lineHeight": "1.1",
+                                  "letterSpacing": "-0.02em",
+                                  "fontWeight": "800"
+                          }
+                  ],
+                  "body-md": [
+                          "16px",
+                          {
+                                  "lineHeight": "1.6",
+                                  "fontWeight": "400"
+                          }
+                  ]
+          }
+  },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant/10 shadow-sm">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-container-max-width mx-auto h-20">
+<a class="font-headline-md text-headline-md font-extrabold tracking-tighter text-primary" href="/">ERZ GARAGE</a>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200 hover:bg-primary/10 px-3 py-2 rounded-DEFAULT" href="/">Anasayfa</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200 hover:bg-primary/10 px-3 py-2 rounded-DEFAULT" href="/hakkimizda">Hakkımızda</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 font-bold" href="/hizmetler">Hizmetler</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200 hover:bg-primary/10 px-3 py-2 rounded-DEFAULT" href="/markalar">Markalar</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200 hover:bg-primary/10 px-3 py-2 rounded-DEFAULT" href="/yol-yardim">Yol Yardım</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200 hover:bg-primary/10 px-3 py-2 rounded-DEFAULT" href="/iletisim">İletişim</a>
+</nav>
+<a class="hidden md:inline-flex bg-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-DEFAULT uppercase tracking-wider items-center gap-2 hover:bg-primary-container/90 transition-colors" href="tel:05385858157">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+        Hemen Ara
+      </a>
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-24 pb-section-gap-lg">
+<!-- Hero Section -->
+<section class="px-base md:px-gutter max-w-container-max-width mx-auto mb-section-gap-lg mt-12">
+<div class="relative bg-surface-container-high rounded-xl overflow-hidden min-h-[400px] md:min-h-[500px] flex items-center border border-white/5 shadow-2xl">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="High-end automotive workshop with an engine bay" class="w-full h-full object-cover opacity-30 mix-blend-luminosity" data-alt="A pristine, high-end European automotive workshop environment. The lighting is dramatic and moody, with bright white overhead shop lights reflecting off the polished concrete floor and metallic tools. In the foreground, a sleek engine bay is visible, exuding technical precision and power. The color palette is dominated by deep blacks, cool metallic grays, and intense, glowing electric red accents that signify urgency and high performance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmSvpC0A9oTW52YloMYyPnD2anZG8FKXxgCAhMh0Jj3PPE29t1VbSES0j714Jh81r_xV0zXxbxBuluWOVASh0tXEf6bYUTVDrPWxt0tnZL4BVGju1IsogHpnjn8vK-IYAbzb6J6c__6o3qj-oIvIywnL94pD5_FbnHxcccl1pqCmr4duK8n0Pe8in79mW26Gyi6NAY3ms6HIBT7AGT6UXuVMGXN0YeuDS0_vAKrh7u8o37cvZjgt_EnPO1oJbabAYRZGqnme97Akk"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-3xl px-6 md:px-12 py-16">
+<h1 class="font-display-xl text-display-xl text-on-surface mb-6 uppercase">Oto Tamir, Bakım ve Onarım Hizmetleri</h1>
+<p class="font-body-lg text-body-lg text-secondary mb-10 max-w-2xl">ERZ GARAGE Bursa Nilüfer’de arıza tespit, periyodik bakım, mekanik onarım, fren, elektrik, yağ değişimi, akü değişimi, şanzıman ve 7/24 yol yardım hizmetleri.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded-DEFAULT uppercase tracking-wider inline-flex items-center justify-center gap-2 hover:bg-primary-container/90 transition-all border border-transparent hover:border-white/20" href="tel:05385858157">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+              Hemen Ara: 0538 585 8157
+            </a>
+<a class="bg-transparent text-on-surface font-label-caps text-label-caps px-8 py-4 rounded-DEFAULT uppercase tracking-wider inline-flex items-center justify-center gap-2 border-2 border-surface-highest hover:border-primary transition-all" href="https://wa.me/905385858157" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+              WhatsApp’tan Yaz
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Diagnostics Section -->
+<section class="px-base md:px-gutter max-w-container-max-width mx-auto mb-section-gap-lg">
+<div class="mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Hangi hizmete ihtiyacınız var?</h2>
+<p class="font-body-md text-body-md text-secondary">Sık karşılaşılan sorunlar için hızlı teşhis ve çözüm önerileri.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+<!-- Diagnostic Cards -->
+<a class="bg-surface-container border border-white/5 rounded-lg p-6 hover:bg-surface-container-high transition-colors group flex flex-col items-start gap-4" href="#ariza-tespit">
+<div class="bg-error-container/20 text-error p-3 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">warning</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface text-sm">Arıza lambası yanıyor</span>
+<span class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-1 group-hover:gap-2 transition-all">Teşhis Et <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+</a>
+<a class="bg-surface-container border border-white/5 rounded-lg p-6 hover:bg-surface-container-high transition-colors group flex flex-col items-start gap-4" href="#fren">
+<div class="bg-surface-bright text-secondary p-3 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">car_crash</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface text-sm">Frenlerden ses geliyor</span>
+<span class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-1 group-hover:gap-2 transition-all">Kontrol Ettir <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+</a>
+<a class="bg-surface-container border border-white/5 rounded-lg p-6 hover:bg-surface-container-high transition-colors group flex flex-col items-start gap-4" href="#aku">
+<div class="bg-surface-bright text-secondary p-3 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">battery_charging_full</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface text-sm">Araç geç çalışıyor</span>
+<span class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-1 group-hover:gap-2 transition-all">Akü Ölçümü <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+</a>
+<a class="bg-surface-container border border-white/5 rounded-lg p-6 hover:bg-surface-container-high transition-colors group flex flex-col items-start gap-4" href="#bakim">
+<div class="bg-surface-bright text-secondary p-3 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">oil_barrel</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface text-sm">Yağ bakım zamanı geldi</span>
+<span class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-1 group-hover:gap-2 transition-all">Randevu Al <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+</a>
+<a class="bg-primary-container border border-primary-container rounded-lg p-6 hover:bg-primary-container/90 transition-colors group flex flex-col items-start gap-4" href="tel:05385858157">
+<div class="bg-white/20 text-on-primary-container p-3 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-primary-container text-sm">Yolda kaldım</span>
+<span class="font-label-caps text-label-caps text-on-primary-container mt-auto flex items-center gap-1 group-hover:gap-2 transition-all">Acil Yardım İste <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+</a>
+</div>
+</section>
+<!-- Main Service Grid -->
+<section class="px-base md:px-gutter max-w-container-max-width mx-auto mb-section-gap-lg">
+<div class="mb-12 border-b border-white/10 pb-6 flex justify-between items-end">
+<div>
+<h2 class="font-display-xl text-display-xl text-on-surface mb-2 uppercase">Tüm Hizmetlerimiz</h2>
+<p class="font-body-md text-body-md text-secondary">Profesyonel ekipman ve uzman kadro ile eksiksiz servis deneyimi.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Service Card 1 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group" id="ariza-tespit">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">troubleshoot</span>
+<span class="font-label-caps text-label-caps text-secondary/50">01</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Araç motoru arıza tespiti</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Bilgisayarlı diagnostik cihazlarla noktasal motor arıza tespiti ve raporlama.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/ariza-tespiti">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">manufacturing</span>
+<span class="font-label-caps text-label-caps text-secondary/50">02</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Direksiyon ve süspansiyon tamiri</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Sürüş güvenliği için direksiyon kutusu ve süspansiyon sistemi onarımı.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/suspansiyon">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">electrical_services</span>
+<span class="font-label-caps text-label-caps text-secondary/50">03</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Elektrik</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Araç içi ve dışı tüm elektriksel donanım arızalarının giderilmesi.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/elektrik">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group" id="fren">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">tire_repair</span>
+<span class="font-label-caps text-label-caps text-secondary/50">04</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Fren</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Disk, balata kontrolü ve fren sistemi genel bakım hizmetleri.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/fren">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 5 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">air</span>
+<span class="font-label-caps text-label-caps text-secondary/50">05</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Hava ve kabin filtresi değişimi</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Temiz hava akışı ve motor performansı için filtre değişimleri.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/filtre">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 6 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">settings_applications</span>
+<span class="font-label-caps text-label-caps text-secondary/50">06</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">İletim</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Güç aktarım organları kontrolü ve periyodik bakımı.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/iletim">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 7 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group" id="bakim">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">oil_barrel</span>
+<span class="font-label-caps text-label-caps text-secondary/50">07</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Yağ değişimi</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Motor ömrünü uzatan kaliteli motor yağı ve filtre değişimi.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/yag-degisimi">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 8 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group" id="aku">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">battery_charging_full</span>
+<span class="font-label-caps text-label-caps text-secondary/50">08</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Araç aküsü değişimi</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Akü kapasite ölçümü ve yüksek performanslı yeni akü montajı.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/aku-degisimi">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 9 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">car_repair</span>
+<span class="font-label-caps text-label-caps text-secondary/50">09</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Direksiyon ve süspansiyon değişimi</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Aşınmış süspansiyon parçalarının orijinal yedek parça ile değişimi.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/suspansiyon-degisimi">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 10 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">build</span>
+<span class="font-label-caps text-label-caps text-secondary/50">10</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Oto fren tamiri</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Fren kaliperleri, hidrolik sistemi ve balata onarım işlemleri.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/fren-tamiri">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 11 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">disc_full</span>
+<span class="font-label-caps text-label-caps text-secondary/50">11</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Otomobil fren değişimi</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Güvenliğiniz için aşınmış fren diskleri ve balatalarının yenilenmesi.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/fren-degisimi">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 12 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">airline_seat_recline_normal</span>
+<span class="font-label-caps text-label-caps text-secondary/50">12</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Otomobil kaportası ve döşeme değişimi</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Araç içi döşeme yenileme ve ufak kaporta hasarlarının onarımı.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/kaporta-doseme">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 13 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">tune</span>
+<span class="font-label-caps text-label-caps text-secondary/50">13</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Otomobil motoru ince ayar hizmeti</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Maksimum performans ve yakıt tasarrufu için motor optimizasyonu.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/motor-ayar">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 14 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">water_drop</span>
+<span class="font-label-caps text-label-caps text-secondary/50">14</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Otomobil su kaçağı tamiri</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Soğutma sistemi basınç testi ve sızıntıların kalıcı olarak onarılması.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/su-kacagi">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 15 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">settings</span>
+<span class="font-label-caps text-label-caps text-secondary/50">15</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Şanzıman tamiri</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Otomatik ve manuel şanzıman revizyonu, yağ değişimi ve bakımı.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/sanziman">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 16 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">date_range</span>
+<span class="font-label-caps text-label-caps text-secondary/50">16</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Periyodik bakım</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Üretici standartlarında, garantiyi bozmayan düzenli bakım hizmeti.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/periyodik-bakim">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 17 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">handyman</span>
+<span class="font-label-caps text-label-caps text-secondary/50">17</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Mekanik onarım</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Motor rektifiye, triger değişimi ve tüm ağır mekanik onarımlar.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/hizmetler/mekanik-onarim">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 18 -->
+<div class="bg-surface-container-highest border border-white/5 rounded-lg p-8 flex flex-col gap-6 hover:bg-surface-variant transition-colors group">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl text-primary font-light">minor_crash</span>
+<span class="font-label-caps text-label-caps text-secondary/50">18</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">7/24 yol yardım</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 line-clamp-2">Bursa ve çevresinde acil durumlarda hızlı çekici ve yol yardım desteği.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary mt-auto flex items-center gap-2 group-hover:text-primary-fixed transition-colors" href="/yol-yardim">
+            Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="px-base md:px-gutter max-w-container-max-width mx-auto">
+<div class="bg-surface-container border border-white/5 rounded-xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Aracınız için doğru hizmeti seçemiyor musunuz?</h2>
+<p class="font-body-md text-body-md text-secondary">Uzman ustalarımızdan ücretsiz telefonda ön teşhis ve danışmanlık alın.</p>
+</div>
+<a class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded-DEFAULT uppercase tracking-wider inline-flex items-center justify-center gap-2 hover:bg-primary-container/90 transition-all border border-transparent hover:border-white/20 whitespace-nowrap w-full md:w-auto shrink-0" href="tel:05385858157">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+          Hemen Arayın, Yardımcı Olalım
+        </a>
+</div>
+</section>
+</main>
+<!-- Sticky Mobile Booking Bar -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-surface-container-highest border-t border-white/10 p-4 z-40 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+<a class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-4 rounded-DEFAULT uppercase tracking-wider flex items-center justify-center gap-2 w-full active:scale-95 transition-transform" href="tel:05385858157">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+      Hızlı Randevu Al
+    </a>
+</div>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 pt-16 pb-8 md:pb-16 mt-section-gap-md pb-24 md:pb-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-base md:px-gutter max-w-container-max-width mx-auto">
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0">
+<span class="font-headline-md text-headline-md font-bold text-on-surface block mb-4">ERZ GARAGE</span>
+<p class="font-body-md text-body-md text-secondary/80">© 2024 ERZ GARAGE Bursa Nilüfer. Professional Automotive Excellence.</p>
+</div>
+<div class="col-span-1 flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-on-surface mb-2">Hızlı Linkler</span>
+<a class="font-body-md text-body-md text-primary underline hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded" href="/hizmetler">Hizmetlerimiz</a>
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded" href="/yol-yardim">Yol Yardım</a>
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded" href="/gizlilik">Gizlilik Politikası</a>
+</div>
+<div class="col-span-1 flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-on-surface mb-2">Uzmanlıklar</span>
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded" href="/markalar/bmw">BMW Servis</a>
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded" href="/markalar/mercedes">Mercedes Servis</a>
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary rounded" href="/markalar/audi">Audi Servis</a>
+</div>
+<div class="col-span-1 flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-on-surface mb-2">İletişim</span>
+<p class="font-body-md text-body-md text-secondary/80 flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> Nilüfer, Bursa</p>
+<p class="font-body-md text-body-md text-secondary/80 flex items-center gap-2"><span class="material-symbols-outlined text-sm">call</span> 0538 585 8157</p>
+</div>
+</div>
+</footer>
+</body></html>

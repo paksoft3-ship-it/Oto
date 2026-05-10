@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bursa Nilüfer Otomobil Su Kaçağı Tamiri | ERZ GARAGE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@500&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#bfc7d4",
+                        "on-secondary-fixed-variant": "#42474f",
+                        "outline": "#ad8885",
+                        "on-tertiary": "#29313b",
+                        "on-secondary-container": "#b1b5bf",
+                        "on-tertiary-container": "#f9faff",
+                        "primary-container": "#e11d2e",
+                        "inverse-primary": "#c0001f",
+                        "tertiary-fixed": "#dbe3f0",
+                        "surface-container": "#182029",
+                        "on-primary-fixed": "#410004",
+                        "surface-container-lowest": "#070f17",
+                        "surface-tint": "#ffb3ae",
+                        "primary": "#ffb3ae",
+                        "surface-dim": "#0c141c",
+                        "on-tertiary-fixed": "#141c25",
+                        "tertiary-container": "#6c747f",
+                        "outline-variant": "#5d3f3d",
+                        "on-background": "#dbe3ef",
+                        "on-primary": "#68000c",
+                        "tertiary": "#bfc7d4",
+                        "on-primary-fixed-variant": "#930015",
+                        "inverse-on-surface": "#29313a",
+                        "on-secondary-fixed": "#171c23",
+                        "surface-bright": "#323a43",
+                        "background": "#0c141c",
+                        "secondary-fixed": "#dee2ec",
+                        "on-error": "#690005",
+                        "secondary-fixed-dim": "#c2c7d0",
+                        "primary-fixed": "#ffdad7",
+                        "on-surface-variant": "#e6bdb9",
+                        "secondary": "#c2c7d0",
+                        "error-container": "#93000a",
+                        "surface-variant": "#2e363e",
+                        "on-surface": "#dbe3ef",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-highest": "#2e363e",
+                        "on-primary-container": "#fff8f7",
+                        "on-secondary": "#2c3138",
+                        "inverse-surface": "#dbe3ef",
+                        "error": "#ffb4ab",
+                        "surface-container-high": "#232b33",
+                        "secondary-container": "#42474f",
+                        "surface-container-low": "#141c24",
+                        "surface": "#0c141c",
+                        "primary-fixed-dim": "#ffb3ae",
+                        "on-tertiary-fixed-variant": "#3f4752"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "max-width": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "technical-mono": ["JetBrains Mono"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "technical-mono": ["14px", { "lineHeight": "1.5", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom styles for diagnostic aesthetic */
+        .diagnostic-bg {
+            background-image: 
+                linear-gradient(to right, rgba(93, 63, 61, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(93, 63, 61, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .tech-glow {
+            box-shadow: 0 0 15px rgba(225, 29, 46, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased diagnostic-bg min-h-screen flex flex-col pt-20">
+<!-- TopAppBar -->
+<header class="bg-surface/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/10 shadow-sm">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-max-width mx-auto h-20">
+<div class="font-headline-md text-headline-md font-extrabold tracking-tighter text-primary">ERZ GARAGE</div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Anasayfa</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Hakkımızda</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-caps text-label-caps hover:bg-primary/10 hover:text-primary scale-95 transition-transform duration-150" href="#">Hizmetler</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Markalar</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Yol Yardım</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">İletişim</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded font-label-caps text-label-caps hover:bg-inverse-primary transition-colors duration-200 hidden md:block">
+                Hemen Ara
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative pt-margin-desktop pb-24 md:pb-32 px-base md:px-gutter border-b border-outline-variant/20">
+<div class="absolute inset-0 z-0 bg-surface-container-lowest/80">
+<img alt="automotive background" class="w-full h-full object-cover opacity-20 mix-blend-overlay grayscale" data-alt="A highly detailed close up of a modern German car engine bay, dimly lit in a dark garage. The focus is on the intricate metal components, hoses, and mechanical assemblies. The lighting is cool, metallic, and dramatic, emphasizing a high-performance, precision engineering aesthetic in a premium automotive workshop. Deep shadows and stark contrasts create a mood of technical expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxCZRRs4Dst_mxBJUdKU5KOS8BLVeco9AWuWG3enF_PfOipulxe18PJAvHe3Qwf9fvFgScnbW1VJKWN93R6TY-3I8xx0qeNWpYqvGToy9Zv97iGuezNd1FR2gruaFWga0wxIHPqo2jsC2-g40uLovm74L8UNvDhCEQWBfn3okuPtKHV_99quaa7o5P_pJjryBmB_fQuotif0mvaywYihAnUL-du9wcFCK4uunn0Auc-9Grgh-GZoFnlZOETtXncalBnOvPM31JL90"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-background"></div>
+</div>
+<div class="relative z-10 max-w-max-width mx-auto flex flex-col md:flex-row gap-gutter items-center">
+<div class="md:w-2/3 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-variant border border-outline-variant/30 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm">build</span>
+<span class="font-technical-mono text-technical-mono text-secondary">HİZMET: DIAGNOSTİK &amp; ONARIM</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl md:text-headline-xl text-on-surface">
+                        Bursa Nilüfer Otomobil Su Kaçağı Tamiri
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-4 border-primary pl-6">
+                        Aracınızda su eksiltme, hararet, soğutma problemi veya kaçak belirtileri varsa ERZ GARAGE Bursa Nilüfer’de su kaçağı tespiti ve tamiri yapılır.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-primary-container text-on-primary-container hover:bg-inverse-primary px-8 py-4 rounded font-label-caps text-label-caps flex items-center justify-center gap-2 transition-all">
+<span class="material-symbols-outlined">call</span>
+                            Hemen Ara
+                        </button>
+<button class="bg-transparent border-2 border-surface-variant text-on-surface hover:bg-surface-variant px-8 py-4 rounded font-label-caps text-label-caps flex items-center justify-center gap-2 transition-all">
+<span class="material-symbols-outlined">chat</span>
+                            WhatsApp
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<div class="max-w-max-width mx-auto px-base md:px-gutter py-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Content Area -->
+<div class="lg:col-span-8 space-y-margin-desktop">
+<!-- Detailed Explanation -->
+<section class="space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-on-surface border-b border-outline-variant/20 pb-4">Su kaçağı neden önemlidir?</h2>
+<div class="prose prose-invert max-w-none font-body-md text-body-md text-secondary space-y-4">
+<p>
+                            Motor soğutma sistemi, aracınızın kalbinin ideal çalışma sıcaklığında kalmasını sağlayan kritik bir ağdır. Bu sistemdeki ufak bir sızıntı, zamanla büyük mekanik arızalara yol açabilecek bir domino etkisini başlatabilir. 
+                        </p>
+<p>
+                            Modern Alman mühendisliği (BMW, Mercedes, Audi) hassas toleranslarla çalışır. Antifriz veya su seviyesindeki düşüş, motor bloğunda aşırı ısınmaya (hararet) sebep olarak silindir kapak contasının yanmasına, hatta motor bloğunun çatlamasına kadar giden ciddi ve maliyetli hasarlara neden olabilir. Erken teşhis, bu yıkıcı sonuçları önlemenin tek yoludur.
+                        </p>
+</div>
+</section>
+<!-- Symptoms Grid -->
+<section class="space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-on-surface border-b border-outline-variant/20 pb-4">Belirtiler</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container p-6 border border-surface-variant rounded flex items-start gap-4">
+<div class="bg-surface-container-highest p-3 rounded text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">Araç su eksiltiyor</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Soğutma sıvısı seviyesi sürekli düşüyorsa gizli bir kaçak vardır.</p>
+</div>
+</div>
+<div class="bg-surface-container p-6 border border-surface-variant rounded flex items-start gap-4">
+<div class="bg-surface-container-highest p-3 rounded text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">thermostat</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">Hararet yükseliyor</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Gösterge panelinde motor sıcaklığının normalin üzerine çıkması.</p>
+</div>
+</div>
+<div class="bg-surface-container p-6 border border-surface-variant rounded flex items-start gap-4">
+<div class="bg-surface-container-highest p-3 rounded text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">plumbing</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">Motor altında sıvı birikiyor</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Park halindeyken aracın altında renkli (genelde yeşil/kırmızı) sıvı görülmesi.</p>
+</div>
+</div>
+<div class="bg-surface-container p-6 border border-surface-variant rounded flex items-start gap-4">
+<div class="bg-surface-container-highest p-3 rounded text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">hvac</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">Klima/kalorifer performansı değişiyor</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Özellikle ısıtma sisteminin verimsiz çalışmaya başlaması.</p>
+</div>
+</div>
+<div class="bg-surface-container p-6 border border-surface-variant rounded flex items-start gap-4 md:col-span-2">
+<div class="bg-surface-container-highest p-3 rounded text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-lg">Uyarı lambası yanıyor</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Gösterge panelinde soğutma sistemi arıza lambasının aktif olması.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Scope (Bento/Card Style) -->
+<section class="space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-on-surface border-b border-outline-variant/20 pb-4">Hizmet Kapsamı</h2>
+<div class="bg-surface-container border border-surface-variant rounded overflow-hidden">
+<div class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-surface-variant">
+<div class="p-6 flex flex-col items-center text-center hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">search</span>
+<h4 class="font-technical-mono text-technical-mono text-on-surface">Kaçak tespiti</h4>
+</div>
+<div class="p-6 flex flex-col items-center text-center hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">account_tree</span>
+<h4 class="font-technical-mono text-technical-mono text-on-surface">Hortum ve bağlantı kontrolü</h4>
+</div>
+<div class="p-6 flex flex-col items-center text-center hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">heat_pump</span>
+<h4 class="font-technical-mono text-technical-mono text-on-surface">Radyatör kontrolü</h4>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x border-t divide-surface-variant border-surface-variant">
+<div class="p-6 flex flex-col items-center text-center hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">network_check</span>
+<h4 class="font-technical-mono text-technical-mono text-on-surface">Soğutma sistemi kontrolü</h4>
+</div>
+<div class="p-6 flex flex-col items-center text-center hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">medical_services</span>
+<h4 class="font-technical-mono text-technical-mono text-on-surface">Tamir önerisi</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-on-surface border-b border-outline-variant/20 pb-4">Sıkça Sorulan Sorular</h2>
+<div class="space-y-2">
+<!-- FAQ Item 1 -->
+<details class="bg-surface-container border border-surface-variant rounded group">
+<summary class="font-headline-md text-headline-md text-base p-4 cursor-pointer flex justify-between items-center text-on-surface list-none">
+                                Araç neden su eksiltir?
+                                <span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-4 pt-0 font-body-md text-body-md text-secondary border-t border-surface-variant/50 mt-2">
+                                Hortum çatlakları, radyatör delinmeleri, devirdaim pompası arızaları veya gevşek kelepçeler en yaygın nedenlerdir.
+                            </div>
+</details>
+<!-- FAQ Item 2 -->
+<details class="bg-surface-container border border-surface-variant rounded group">
+<summary class="font-headline-md text-headline-md text-base p-4 cursor-pointer flex justify-between items-center text-on-surface list-none">
+                                Su kaçağıyla araç kullanılır mı?
+                                <span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-4 pt-0 font-body-md text-body-md text-secondary border-t border-surface-variant/50 mt-2">
+                                Kesinlikle önerilmez. Sistemdeki basınç kaybı ve yetersiz soğutma, dakikalar içinde motorun aşırı ısınmasına ve kalıcı hasar görmesine neden olabilir.
+                            </div>
+</details>
+<!-- FAQ Item 3 -->
+<details class="bg-surface-container border border-surface-variant rounded group">
+<summary class="font-headline-md text-headline-md text-base p-4 cursor-pointer flex justify-between items-center text-on-surface list-none">
+                                Hararet neden yükselir?
+                                <span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-4 pt-0 font-body-md text-body-md text-secondary border-t border-surface-variant/50 mt-2">
+                                Soğutma sıvısının eksik olması, termostat arızası, radyatör fanının çalışmaması veya devirdaim pompasının işlevini yitirmesi hararetin başlıca sebepleridir.
+                            </div>
+</details>
+<!-- FAQ Item 4 -->
+<details class="bg-surface-container border border-surface-variant rounded group">
+<summary class="font-headline-md text-headline-md text-base p-4 cursor-pointer flex justify-between items-center text-on-surface list-none">
+                                Kaçak tespiti ne kadar sürer?
+                                <span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-4 pt-0 font-body-md text-body-md text-secondary border-t border-surface-variant/50 mt-2">
+                                Modern basınç test cihazları ile kaçak tespiti genellikle 30 ile 60 dakika arasında tamamlanır.
+                            </div>
+</details>
+</div>
+</section>
+</div>
+<!-- Sidebar / Floating Elements -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Risk Warning Card -->
+<div class="bg-[#2a080a] border-l-4 border-primary-container p-6 rounded shadow-lg relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 opacity-10 transform group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-9xl text-primary" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="relative z-10 flex flex-col gap-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">error</span>
+<h3 class="font-headline-md text-headline-md text-xl">KRİTİK UYARI</h3>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container font-bold text-lg">
+                            Su kaçağı ihmal edilirse motor hasarına yol açabilir.
+                        </p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                            Hemen müdahale edilmeyen soğutma sistemi arızaları, binlerce liralık motor revizyonu masraflarına neden olur.
+                        </p>
+</div>
+</div>
+<!-- CTA Sticky Card -->
+<div class="bg-surface-container border border-surface-variant p-6 rounded sticky top-28">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Hemen Randevu Alın</h3>
+<p class="font-body-md text-body-md text-secondary mb-6 text-sm">
+                        Su kaçağı ve hararet problemini büyümeden çözdürün.
+                    </p>
+<div class="space-y-4">
+<a class="w-full bg-primary-container text-on-primary-container hover:bg-inverse-primary py-3 rounded font-label-caps text-label-caps flex items-center justify-center gap-2 transition-all" href="tel:05385858157">
+<span class="material-symbols-outlined">call</span>
+                            Hemen Arayın
+                        </a>
+<div class="text-center font-technical-mono text-technical-mono text-secondary">
+                            0538 585 8157
+                        </div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full border-t border-outline-variant/20 flat no shadows mt-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-base md:px-gutter py-12 max-w-max-width mx-auto">
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">ERZ GARAGE</div>
+<p class="font-body-md text-body-md text-secondary/80 text-sm">© 2024 ERZ GARAGE Bursa Nilüfer. Professional Automotive Excellence.</p>
+</div>
+<div class="space-y-4 md:col-start-3">
+<h4 class="font-label-caps text-label-caps text-primary">Hızlı Menü</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-max" href="#">Hizmetlerimiz</a>
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-max" href="#">Yol Yardım</a>
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-max" href="#">Gizlilik Politikası</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary">Uzmanlıklar</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-max" href="#">BMW Servis</a>
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-max" href="#">Mercedes Servis</a>
+<a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-max" href="#">Audi Servis</a>
+</nav>
+</div>
+</div>
+</footer>
+</body></html>

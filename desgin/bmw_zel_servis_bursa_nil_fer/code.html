@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BMW Özel Servis Bursa Nilüfer - ERZ GARAGE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=JetBrains+Mono:wght@500&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#bfc7d4",
+                      "secondary-fixed": "#dee2ec",
+                      "surface-bright": "#323a43",
+                      "on-secondary-fixed-variant": "#42474f",
+                      "tertiary-fixed": "#dbe3f0",
+                      "surface-container": "#182029",
+                      "on-surface-variant": "#e6bdb9",
+                      "on-primary-container": "#fff8f7",
+                      "on-primary": "#68000c",
+                      "surface-variant": "#2e363e",
+                      "outline-variant": "#5d3f3d",
+                      "background": "#0c141c",
+                      "secondary-fixed-dim": "#c2c7d0",
+                      "on-error": "#690005",
+                      "inverse-surface": "#dbe3ef",
+                      "tertiary": "#bfc7d4",
+                      "surface": "#0c141c",
+                      "tertiary-container": "#6c747f",
+                      "secondary-container": "#42474f",
+                      "secondary": "#c2c7d0",
+                      "primary": "#ffb3ae",
+                      "on-tertiary-container": "#f9faff",
+                      "surface-container-low": "#141c24",
+                      "surface-dim": "#0c141c",
+                      "on-surface": "#dbe3ef",
+                      "surface-container-lowest": "#070f17",
+                      "inverse-primary": "#c0001f",
+                      "surface-tint": "#ffb3ae",
+                      "primary-container": "#e11d2e",
+                      "on-error-container": "#ffdad6",
+                      "outline": "#ad8885",
+                      "surface-container-highest": "#2e363e",
+                      "primary-fixed": "#ffdad7",
+                      "on-tertiary": "#29313b",
+                      "inverse-on-surface": "#29313a",
+                      "error": "#ffb4ab",
+                      "on-secondary-container": "#b1b5bf",
+                      "on-background": "#dbe3ef",
+                      "on-secondary": "#2c3138",
+                      "primary-fixed-dim": "#ffb3ae",
+                      "surface-container-high": "#232b33",
+                      "on-primary-fixed-variant": "#930015",
+                      "on-tertiary-fixed-variant": "#3f4752",
+                      "on-secondary-fixed": "#171c23",
+                      "on-primary-fixed": "#410004",
+                      "on-tertiary-fixed": "#141c25",
+                      "error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "max-width": "1280px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "technical-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Manrope"
+                      ],
+                      "headline-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "technical-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-20 selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/10 shadow-sm">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-container-max-width mx-auto h-20">
+<div class="font-headline-md text-headline-md font-extrabold tracking-tighter text-primary">ERZ GARAGE</div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Anasayfa</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Hakkımızda</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Hizmetler</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-caps text-label-caps" href="#">Markalar</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">Yol Yardım</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 font-label-caps text-label-caps" href="#">İletişim</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container hover:bg-inverse-primary px-6 py-2 rounded-DEFAULT font-label-caps text-label-caps transition-colors hidden md:block">
+                Hemen Ara
+            </button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center justify-center overflow-hidden border-b border-outline-variant/20">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-background/80 z-10"></div>
+<img alt="Premium Garage Background" class="w-full h-full object-cover" data-alt="A dark, cinematic shot of a sleek, high-performance luxury car silhouette in a pristine, modern garage setting. The scene is illuminated by dramatic, low-key lighting with subtle neon blue and intense electric red accents highlighting the sleek lines of the vehicle. The overall mood is one of surgical precision, high-tech engineering, and premium quality, fitting a specialist German automotive workshop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_fClhVM-tgaHK6w9lBUG5Vyiek-e0Wo7J9t7JR7EtuGqDmswPpZpWoP1ajWIR8_OZg_2aFgV9ckjhrUsCBiPBEMq4sQaYGUMFAAtKJk_j6a2YWjJqQHZEVkp4JqOzEmevFaakYtauurNXSH1JjbtTthBOPaYSinWoxwzpkvaL-uTdRe2DdUsJiF_qqds-imrSt4J8FI_appl_PicAW4HXAaQ7HJvFFfUvhAYcaYyztA1dCV6DLayq3s6H7S-q3eWylPeAbX3JmbQ"/>
+</div>
+<div class="relative z-20 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container rounded-full border border-outline-variant/30 mb-8 mx-auto">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-secondary">UZMAN TEKNİK SERVİS</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-6 max-w-4xl mx-auto tracking-tighter">
+                BMW Özel Servis <br class="hidden md:block"/><span class="text-primary-container">Bursa Nilüfer</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+                BMW aracınız için arıza tespit, periyodik bakım, mekanik onarım, fren, yağ değişimi, akü ve teknik servis hizmetlerini ERZ GARAGE Bursa Nilüfer’de güvenle alabilirsiniz.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary-container text-on-primary-container hover:bg-inverse-primary px-8 py-4 rounded-DEFAULT font-label-caps text-label-caps transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="call">call</span>
+                    RANDEVU AL
+                </button>
+<button class="bg-transparent border-2 border-tertiary-container text-on-surface hover:border-on-surface px-8 py-4 rounded-DEFAULT font-label-caps text-label-caps transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="build">build</span>
+                    HİZMETLERİ İNCELE
+                </button>
+</div>
+</div>
+<!-- Technical Accent Line -->
+<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-background via-primary-container to-background z-20"></div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">BMW <span class="text-primary-container">Hizmetleri</span></h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl">Yüksek performanslı araçlarınız için fabrika standartlarında, tam donanımlı diagnostik ve mekanik bakım onarım hizmetleri.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
+<!-- Arıza Tespit (Large) -->
+<div class="md:col-span-2 lg:col-span-2 bg-surface-container border border-tertiary-container/30 rounded-lg p-8 relative overflow-hidden group hover:border-primary-container transition-colors">
+<div class="absolute -right-8 -top-8 text-surface-variant/50 group-hover:text-primary-container/10 transition-colors">
+<span class="material-symbols-outlined" data-icon="troubleshoot" style="font-size: 160px; font-variation-settings: 'FILL' 1;">troubleshoot</span>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl" data-icon="troubleshoot">troubleshoot</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Arıza Tespit</h3>
+<p class="font-body-md text-body-md text-secondary">Orijinal diagnostik cihazları ile detaylı elektronik hata okuma, motor parametre analizi ve nokta atışı tespit.</p>
+</div>
+</div>
+<!-- Periyodik Bakım -->
+<div class="bg-surface-container border border-tertiary-container/30 rounded-lg p-6 hover:border-outline transition-colors">
+<span class="material-symbols-outlined text-tertiary mb-4" data-icon="schedule">schedule</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl mb-2">Periyodik Bakım</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Üretici standartlarında filtre ve sıvı değişimleri.</p>
+</div>
+<!-- Yağ Değişimi -->
+<div class="bg-surface-container border border-tertiary-container/30 rounded-lg p-6 hover:border-outline transition-colors">
+<span class="material-symbols-outlined text-tertiary mb-4" data-icon="oil_barrel">oil_barrel</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl mb-2">Yağ Değişimi</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Performans serisi tam sentetik motor yağları ile.</p>
+</div>
+<!-- Mekanik Onarım (Large) -->
+<div class="md:col-span-2 lg:col-span-2 bg-surface-container border border-tertiary-container/30 rounded-lg p-8 relative overflow-hidden group hover:border-primary-container transition-colors">
+<div class="absolute -right-8 -bottom-8 text-surface-variant/50 group-hover:text-primary-container/10 transition-colors">
+<span class="material-symbols-outlined" data-icon="engineering" style="font-size: 160px; font-variation-settings: 'FILL' 1;">engineering</span>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl" data-icon="engineering">engineering</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Mekanik Onarım</h3>
+<p class="font-body-md text-body-md text-secondary">Motor yenileme, turbo revizyonu ve ağır mekanik işlemler için garantili işçilik.</p>
+</div>
+</div>
+<!-- Fren Kontrolü -->
+<div class="bg-surface-container border border-tertiary-container/30 rounded-lg p-6 hover:border-outline transition-colors">
+<span class="material-symbols-outlined text-tertiary mb-4" data-icon="tire_repair">tire_repair</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl mb-2">Fren Kontrolü</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Disk, balata değişimi ve fren hidroliği testi.</p>
+</div>
+<!-- Akü Kontrolü -->
+<div class="bg-surface-container border border-tertiary-container/30 rounded-lg p-6 hover:border-outline transition-colors">
+<span class="material-symbols-outlined text-tertiary mb-4" data-icon="battery_charging_full">battery_charging_full</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl mb-2">Akü Kontrolü</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Voltaj ölçümü, şarj sistemi testi ve değişim.</p>
+</div>
+<!-- Süspansiyon -->
+<div class="bg-surface-container border border-tertiary-container/30 rounded-lg p-6 hover:border-outline transition-colors">
+<span class="material-symbols-outlined text-tertiary mb-4" data-icon="car_repair">car_repair</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl mb-2">Süspansiyon</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Amortisör, salıncak ve rot ayarı hizmetleri.</p>
+</div>
+<!-- Şanzıman -->
+<div class="bg-surface-container border border-tertiary-container/30 rounded-lg p-6 hover:border-outline transition-colors">
+<span class="material-symbols-outlined text-tertiary mb-4" data-icon="settings">settings</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl mb-2">Şanzıman Kontrolü</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Otomatik şanzıman adaptasyonu ve yağ değişimi.</p>
+</div>
+</div>
+</section>
+<!-- Why Us Section -->
+<section class="bg-surface-container-low py-[120px] border-y border-outline-variant/20">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Neden <span class="text-primary-container">ERZ GARAGE?</span></h2>
+<p class="font-body-lg text-body-lg text-secondary mb-8">Alman mühendisliğine yakışır bir yaklaşımla, aracınızın ihtiyaç duyduğu teknik hassasiyeti sağlıyoruz.</p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="verified">verified</span>
+<div>
+<h4 class="font-headline-md text-on-surface text-lg">Profesyonel Ekipman</h4>
+<p class="font-body-md text-secondary">En güncel diagnostik cihazlar ve özel el aletleri.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="precision_manufacturing">precision_manufacturing</span>
+<div>
+<h4 class="font-headline-md text-on-surface text-lg">Odaklı Teknik Yaklaşım</h4>
+<p class="font-body-md text-secondary">Markaya özel spesifikasyonlara tam uyum.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="handyman">handyman</span>
+<div>
+<h4 class="font-headline-md text-on-surface text-lg">Güvenilir İşçilik</h4>
+<p class="font-body-md text-secondary">Şeffaf süreç yönetimi ve garantili onarım işlemleri.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="timer">timer</span>
+<div>
+<h4 class="font-headline-md text-on-surface text-lg">Hızlı Servis</h4>
+<p class="font-body-md text-secondary">Zamanınızın değerini biliyor, işlemleri hızla sonuçlandırıyoruz.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Image Container -->
+<div class="relative h-[500px] rounded-lg overflow-hidden border border-outline-variant/30">
+<img alt="Workshop Equipment" class="w-full h-full object-cover" data-alt="A meticulously clean and organized high-end automotive repair workshop interior. The lighting is bright yet moody, emphasizing the metallic surfaces of specialized tools and diagnostic equipment laid out on a dark graphite workbench. The aesthetic is highly technical, reflecting German engineering standards with a color palette dominated by deep greys, blacks, and subtle red indicator lights. The focus is on precision and professional craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7RppwtDMKuyK9l3fZsr70_SCM1-AtrvpzVRjslKTvlnBZ0KQHhDJ6NMF0K_lJnf9dl5YkIxlfHLzjBVZP-_P4hnZJoMXB5jJmi9u7KP8A9451Sc3Nl2wqAn4L9I0FTJMgmT4UEe-9tHVApxq-rNBzORfxCi6FwaUjs7bRshgfiGEFl3J493-YAkKH-enUwpa6bVdRWmozD4Gdm0SIJbWAUlMFQxVTyKt0Qe05Y8uw21cVBQ-Zjy1ASa5nUiTcx3hz9UON2NxNCKo"/>
+<!-- Tech Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 font-technical-mono text-technical-mono text-on-surface opacity-70">
+                         &gt; SYS_CHECK_OK // DIAGNOSTIC_ACTIVE
+                     </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Generic Issues Section -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Yaygın Karşılaşılan <span class="text-primary-container">Sorunlar</span></h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl mx-auto">Uzman ekibimiz, sık karşılaşılan teknik problemleri hızlı ve kesin çözümlerle giderir.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+<div class="bg-surface p-6 rounded-DEFAULT border border-tertiary-container/20 text-center flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-error-container text-3xl" data-icon="warning">warning</span>
+<span class="font-headline-md text-on-surface text-sm">Arıza Lambası</span>
+</div>
+<div class="bg-surface p-6 rounded-DEFAULT border border-tertiary-container/20 text-center flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="speed">speed</span>
+<span class="font-headline-md text-on-surface text-sm">Performans Düşüşü</span>
+</div>
+<div class="bg-surface p-6 rounded-DEFAULT border border-tertiary-container/20 text-center flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="car_crash">car_crash</span>
+<span class="font-headline-md text-on-surface text-sm">Fren Uyarıları</span>
+</div>
+<div class="bg-surface p-6 rounded-DEFAULT border border-tertiary-container/20 text-center flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="electrical_services">electrical_services</span>
+<span class="font-headline-md text-on-surface text-sm">Elektronik Uyarılar</span>
+</div>
+<div class="bg-surface p-6 rounded-DEFAULT border border-tertiary-container/20 text-center flex flex-col items-center gap-3 sm:col-span-2 lg:col-span-1">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="directions_car">directions_car</span>
+<span class="font-headline-md text-on-surface text-sm">Yol Tutuş Problemleri</span>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="bg-surface-container-highest py-[120px] border-t border-outline-variant/10">
+<div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-10 text-center">Sıkça Sorulan <span class="text-primary-container">Sorular</span></h2>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="bg-surface border border-outline-variant/20 rounded-DEFAULT p-6">
+<h3 class="font-headline-md text-on-surface text-lg mb-2">Arıza tespit süreci nasıl işliyor?</h3>
+<p class="font-body-md text-secondary">Orijinal diagnostik yazılımlarımızla aracınızın beynine bağlanarak tüm sistemleri tarar, hata kodlarını okur ve noktasal analiz raporu sunarız.</p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-surface border border-outline-variant/20 rounded-DEFAULT p-6">
+<h3 class="font-headline-md text-on-surface text-lg mb-2">Periyodik bakımda neler yapılıyor?</h3>
+<p class="font-body-md text-secondary">Üreticinin belirlediği kilometre veya yıl kriterlerine göre motor yağı, yağ filtresi, hava ve polen filtresi değişimi ile genel alt takım ve fren kontrolü gerçekleştirilir.</p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-surface border border-outline-variant/20 rounded-DEFAULT p-6">
+<h3 class="font-headline-md text-on-surface text-lg mb-2">Randevu almam gerekiyor mu?</h3>
+<p class="font-body-md text-secondary">Size en hızlı ve verimli hizmeti sunabilmemiz için gelmeden önce telefon veya WhatsApp üzerinden randevu almanızı tavsiye ederiz.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="relative py-[120px] overflow-hidden border-t border-primary-container/30">
+<!-- Background Tech Texture -->
+<div class="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-surface-container-high via-background to-background"></div>
+<div class="absolute inset-0 z-0 opacity-10 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">BMW aracınız için profesyonel <br/><span class="text-primary-container">servis desteği alın.</span></h2>
+<p class="font-body-lg text-body-lg text-secondary mb-10">Bursa Nilüfer'deki servis merkezimizde aracınızı güvenle uzman ellere teslim edin.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary-container text-on-primary-container hover:bg-inverse-primary px-8 py-4 rounded-DEFAULT font-label-caps text-label-caps transition-colors flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(225,29,46,0.3)]">
+<span class="material-symbols-outlined text-lg" data-icon="call">call</span>
+                    Hemen Ara
+                </button>
+<button class="bg-[#25D366] text-white hover:bg-[#128C7E] px-8 py-4 rounded-DEFAULT font-label-caps text-label-caps transition-colors flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(37,211,102,0.1)]">
+<span class="material-symbols-outlined text-lg" data-icon="forum">forum</span>
+                    WhatsApp'tan Yaz
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full border-t border-outline-variant/20 flat no shadows text-primary font-body-md text-body-md">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-base md:px-gutter py-[64px] max-w-container-max-width mx-auto">
+<!-- Brand -->
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">ERZ GARAGE</span>
+<p class="text-secondary/80 text-sm">Professional Automotive Excellence. Bursa Nilüfer'de uzman özel servis hizmetleri.</p>
+</div>
+<!-- Links 1 -->
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-on-surface mb-2">HIZMETLER</span>
+<a class="text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">Hizmetlerimiz</a>
+<a class="text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">Yol Yardım</a>
+</div>
+<!-- Links 2 -->
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-on-surface mb-2">MARKALAR</span>
+<a class="text-primary underline hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">BMW Servis</a>
+<a class="text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">Mercedes Servis</a>
+<a class="text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">Audi Servis</a>
+</div>
+<!-- Links 3 -->
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-on-surface mb-2">YASAL</span>
+<a class="text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">Gizlilik Politikası</a>
+</div>
+</div>
+<!-- Copyright -->
+<div class="border-t border-outline-variant/10 px-base md:px-gutter py-6 max-w-container-max-width mx-auto text-center md:text-left">
+<span class="text-secondary/60 text-sm font-label-caps text-label-caps">© 2024 ERZ GARAGE Bursa Nilüfer. Professional Automotive Excellence.</span>
+</div>
+</footer>
+</body></html>

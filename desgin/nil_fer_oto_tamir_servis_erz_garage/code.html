@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nilüfer Oto Tamir, Bakım ve Onarım Servisi - ERZ GARAGE</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&amp;family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#c0001f",
+                        "background": "#0c141c",
+                        "error-container": "#93000a",
+                        "tertiary-container": "#6c747f",
+                        "surface-dim": "#0c141c",
+                        "secondary-container": "#42474f",
+                        "outline-variant": "#5d3f3d",
+                        "on-surface": "#dbe3ef",
+                        "on-error": "#690005",
+                        "on-secondary-fixed": "#171c23",
+                        "secondary-fixed": "#dee2ec",
+                        "primary-fixed-dim": "#ffb3ae",
+                        "tertiary": "#bfc7d4",
+                        "outline": "#ad8885",
+                        "on-tertiary-fixed-variant": "#3f4752",
+                        "surface-container-high": "#232b33",
+                        "on-secondary-container": "#b1b5bf",
+                        "primary-container": "#e11d2e",
+                        "error": "#ffb4ab",
+                        "on-background": "#dbe3ef",
+                        "surface-bright": "#323a43",
+                        "surface": "#0c141c",
+                        "on-tertiary-fixed": "#141c25",
+                        "on-primary-container": "#fff8f7",
+                        "on-tertiary-container": "#f9faff",
+                        "tertiary-fixed-dim": "#bfc7d4",
+                        "surface-container-lowest": "#070f17",
+                        "on-primary": "#68000c",
+                        "on-primary-fixed": "#410004",
+                        "surface-container-low": "#141c24",
+                        "secondary": "#c2c7d0",
+                        "primary": "#ffb3ae",
+                        "secondary-fixed-dim": "#c2c7d0",
+                        "on-secondary": "#2c3138",
+                        "tertiary-fixed": "#dbe3f0",
+                        "on-tertiary": "#29313b",
+                        "surface-container": "#182029",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#42474f",
+                        "surface-tint": "#ffb3ae",
+                        "on-primary-fixed-variant": "#930015",
+                        "surface-variant": "#2e363e",
+                        "on-surface-variant": "#e6bdb9",
+                        "primary-fixed": "#ffdad7",
+                        "surface-container-highest": "#2e363e",
+                        "inverse-surface": "#dbe3ef",
+                        "inverse-on-surface": "#29313a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "max-width": "1280px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "technical-mono": ["JetBrains Mono"],
+                        "headline-xl": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "label-caps": ["Inter"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "technical-mono": ["14px", { "lineHeight": "1.5", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant/10 shadow-sm transition-transform duration-150">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-container-max-width mx-auto h-20">
+<div class="font-headline-md text-headline-md font-extrabold tracking-tighter text-primary">
+                ERZ GARAGE
+            </div>
+<nav class="hidden md:flex space-x-6 font-label-caps text-label-caps">
+<a class="text-secondary hover:text-primary transition-colors duration-200" href="#">Anasayfa</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200" href="#">Hakkımızda</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold" href="#">Hizmetler</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200" href="#">Markalar</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200" href="#">Yol Yardım</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200" href="#">İletişim</a>
+</nav>
+<a class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded hover:bg-primary-container/90 transition-colors border border-transparent hover:border-on-primary-container/20" href="tel:05385858157">
+                Hemen Ara
+            </a>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-24 pb-16">
+<!-- Hero Section -->
+<section class="relative w-full max-w-max-width mx-auto px-base md:px-gutter mb-[120px]">
+<div class="absolute inset-0 z-0 rounded-xl overflow-hidden border border-outline-variant/20">
+<img class="w-full h-full object-cover opacity-30" data-alt="A high-end, dark and moody automotive workshop focusing on a premium German engine bay. The scene is illuminated by striking, surgical white overhead lights contrasting sharply against a deep black background. The metallic surfaces of the engine gleam with clinical precision, while subtle neon red accents highlight diagnostic equipment. The atmosphere conveys technical mastery, minimalism, and high-performance engineering within a spotless, professional garage environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBFVzMRYknQ7reKegVqX-XWPRXdacu9hj44rkTNsJWKxlIxow59wjB3kbA1Es82Nwq7akecg0lBHnVEjHxN2E_KgqBbm29oQyi6N6wsGBfWkGpGeHpwG7R1Qb5GrmCUqaxHDTyW2e68subdKGMCk6r7zWo5eAn0xPxHV06wrcN_QTdzgeGmrJzlmseFj2ty39tHf_Chp9Lt8g9bAMAj2jSrmPdxlJ6I22R-PdnUD147SoJqj5kgcpHEzzrsvA1BHo7-C_GDVGiVEs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 py-24 md:py-32 max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-on-background mb-6">
+                    Nilüfer Oto Tamir, Bakım ve Onarım Servisi
+                </h1>
+<p class="font-body-lg text-body-lg text-secondary mb-10">
+                    Bursa Nilüfer’de oto tamir, bakım, arıza tespit, periyodik bakım, fren, elektrik, yağ değişimi, akü değişimi ve 7/24 yol yardım hizmetleri için ERZ GARAGE yanınızda.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 font-label-caps text-label-caps">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container px-8 py-4 rounded shadow-sm hover:bg-error-container hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.2)] transition-all" href="tel:05385858157">
+<span class="material-symbols-outlined mr-2" style="font-variation-settings: 'FILL' 1;">call</span>
+                        Hemen Ara: 0538 585 8157
+                    </a>
+<a class="inline-flex items-center justify-center bg-transparent border-2 border-surface-bright text-on-background px-8 py-4 rounded hover:bg-surface-bright/50 transition-all" href="#">
+<span class="material-symbols-outlined mr-2">chat</span>
+                        WhatsApp’tan Yaz
+                    </a>
+<a class="inline-flex items-center justify-center bg-transparent border-2 border-surface-bright text-on-background px-8 py-4 rounded hover:bg-surface-bright/50 transition-all" href="#">
+<span class="material-symbols-outlined mr-2">directions</span>
+                        Yol Tarifi Al
+                    </a>
+</div>
+</div>
+</section>
+<!-- Nilüfer’de Profesyonel Oto Servis -->
+<section class="max-w-max-width mx-auto px-base md:px-gutter mb-[120px]">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-6">
+                        Nilüfer’de Profesyonel Oto Servis
+                    </h2>
+<p class="font-body-md text-body-md text-secondary mb-6">
+                        Nilüfer ilçesindeki araç sahiplerine güvenilir, şeffaf ve hızlı oto servis hizmeti sunuyoruz. Teknik altyapımız, deneyimli kadromuz ve Alman mühendisliği standartlarına uygun teşhis ekipmanlarımızla aracınızın tüm ihtiyaçlarını karşılıyoruz.
+                    </p>
+<p class="font-body-md text-body-md text-secondary">
+                        Amacımız, sadece arıza gidermek değil, önleyici bakım ile aracınızın performansını ve ömrünü maksimize etmektir. Nilüfer'in kalbinde, kolay ulaşılabilir konumumuzla hizmetinizdeyiz.
+                    </p>
+</div>
+<div class="bg-surface-container-high border border-outline-variant/30 rounded-lg p-8">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<div class="font-technical-mono text-technical-mono text-on-surface">Güvenilirlik</div>
+<div class="font-body-md text-body-md text-secondary">Şeffaf fiyatlandırma ve garantili işlem.</div>
+</div>
+</div>
+<div class="h-px w-full bg-outline-variant/20 mb-6"></div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+</div>
+<div>
+<div class="font-technical-mono text-technical-mono text-on-surface">Teknik Uzmanlık</div>
+<div class="font-body-md text-body-md text-secondary">En güncel diyagnostik cihazlar ile kesin çözüm.</div>
+</div>
+</div>
+<div class="h-px w-full bg-outline-variant/20 mb-6"></div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div>
+<div class="font-technical-mono text-technical-mono text-on-surface">Merkezi Konum</div>
+<div class="font-body-md text-body-md text-secondary">Nilüfer'de hızlı ve kolay erişim.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hizmetlerimiz Grid -->
+<section class="max-w-max-width mx-auto px-base md:px-gutter mb-[120px]">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-10 border-l-4 border-primary-container pl-4">
+                Hizmetlerimiz
+            </h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container border border-surface-bright hover:border-primary-container/50 transition-colors p-6 rounded flex flex-col items-start group">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl group-hover:scale-110 transition-transform">troubleshoot</span>
+<h3 class="font-technical-mono text-technical-mono text-on-surface mb-2">Arıza Tespit</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Bilgisayarlı diyagnostik ile nokta atışı sorun tespiti.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container border border-surface-bright hover:border-primary-container/50 transition-colors p-6 rounded flex flex-col items-start group">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl group-hover:scale-110 transition-transform">schedule</span>
+<h3 class="font-technical-mono text-technical-mono text-on-surface mb-2">Periyodik Bakım</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Üretici standartlarında kilometre ve yıl bazlı bakım.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container border border-surface-bright hover:border-primary-container/50 transition-colors p-6 rounded flex flex-col items-start group">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl group-hover:scale-110 transition-transform">album</span>
+<h3 class="font-technical-mono text-technical-mono text-on-surface mb-2">Fren Tamiri</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Balata, disk değişimi ve fren sistemi testleri.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container border border-surface-bright hover:border-primary-container/50 transition-colors p-6 rounded flex flex-col items-start group">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl group-hover:scale-110 transition-transform">bolt</span>
+<h3 class="font-technical-mono text-technical-mono text-on-surface mb-2">Oto Elektrik</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Elektronik kontrol üniteleri ve tesisat onarımı.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container border border-surface-bright hover:border-primary-container/50 transition-colors p-6 rounded flex flex-col items-start group">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl group-hover:scale-110 transition-transform">water_drop</span>
+<h3 class="font-technical-mono text-technical-mono text-on-surface mb-2">Yağ Değişimi</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Premium marka yağlar ile motor ömrünü uzatan değişim.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container border border-surface-bright hover:border-primary-container/50 transition-colors p-6 rounded flex flex-col items-start group">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl group-hover:scale-110 transition-transform">battery_charging_full</span>
+<h3 class="font-technical-mono text-technical-mono text-on-surface mb-2">Akü Değişimi</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Akü ölçümü ve garantili yeni akü montajı.</p>
+</div>
+<!-- Card 7 -->
+<div class="bg-surface-container border border-surface-bright hover:border-primary-container/50 transition-colors p-6 rounded flex flex-col items-start group">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl group-hover:scale-110 transition-transform">build</span>
+<h3 class="font-technical-mono text-technical-mono text-on-surface mb-2">Mekanik Onarım</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Motor, şanzıman ve yürüyen aksam tamiratı.</p>
+</div>
+<!-- Card 8 -->
+<div class="bg-surface-container border border-primary-container/30 bg-primary-container/5 hover:border-primary-container transition-colors p-6 rounded flex flex-col items-start group">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">car_crash</span>
+<h3 class="font-technical-mono text-technical-mono text-primary mb-2">Yol Yardım (7/24)</h3>
+<p class="font-body-md text-body-md text-secondary text-sm">Acil durumlarda Nilüfer ve çevresinde anında destek.</p>
+</div>
+</div>
+</section>
+<!-- Uzmanlık Alanımız & Hizmet Bölgelerimiz -->
+<section class="max-w-max-width mx-auto px-base md:px-gutter mb-[120px]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Uzmanlık -->
+<div class="bg-surface-container-high border border-outline-variant/20 rounded p-8">
+<h3 class="font-technical-mono text-technical-mono text-on-surface mb-6 flex items-center">
+<span class="material-symbols-outlined mr-2 text-primary">star</span>
+                        PREMIUM UZMANLIK ALANIMIZ
+                    </h3>
+<p class="font-body-md text-body-md text-secondary mb-8">
+                        Nilüfer bölgesinde özellikle Alman menşeli premium araçlar için ihtisaslaşmış hizmet sunuyoruz. BMW, Mercedes ve Audi marka araçlarınızın karmaşık elektronik ve mekanik sistemleri, bu markalar üzerinde özel eğitim almış teknisyenlerimiz tarafından yönetilir.
+                    </p>
+<div class="flex gap-4">
+<div class="px-4 py-2 bg-surface-dim border border-surface-bright rounded text-sm font-label-caps text-on-surface tracking-widest">BMW</div>
+<div class="px-4 py-2 bg-surface-dim border border-surface-bright rounded text-sm font-label-caps text-on-surface tracking-widest">MERCEDES</div>
+<div class="px-4 py-2 bg-surface-dim border border-surface-bright rounded text-sm font-label-caps text-on-surface tracking-widest">AUDI</div>
+</div>
+</div>
+<!-- Bölgeler -->
+<div class="flex flex-col justify-center">
+<h3 class="font-headline-md text-headline-md text-on-background mb-6">
+                        Nilüfer'de Size Çok Yakınız
+                    </h3>
+<p class="font-body-md text-body-md text-secondary mb-6">
+                        Servis ağımız, Nilüfer'in ana arterleri ve yoğun yerleşim bölgelerini kapsayarak hızlı müdahale ve kolay ulaşım imkanı sağlar.
+                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1 bg-surface-bright text-on-surface font-technical-mono text-sm rounded-full border border-outline-variant/30">Nilüfer Merkez</span>
+<span class="px-3 py-1 bg-surface-bright text-on-surface font-technical-mono text-sm rounded-full border border-outline-variant/30">Özlüce</span>
+<span class="px-3 py-1 bg-surface-bright text-on-surface font-technical-mono text-sm rounded-full border border-outline-variant/30">Görükle</span>
+<span class="px-3 py-1 bg-surface-bright text-on-surface font-technical-mono text-sm rounded-full border border-outline-variant/30">Beşevler</span>
+<span class="px-3 py-1 bg-surface-bright text-on-surface font-technical-mono text-sm rounded-full border border-outline-variant/30">İhsaniye</span>
+<span class="px-3 py-1 bg-surface-bright text-on-surface font-technical-mono text-sm rounded-full border border-outline-variant/30">FSM</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Sıkça Sorulan Sorular -->
+<section class="max-w-3xl mx-auto px-base md:px-gutter mb-[120px]">
+<h2 class="font-headline-md text-headline-md text-center text-on-background mb-10">
+                Sıkça Sorulan Sorular (FAQ)
+            </h2>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="bg-surface-container border border-surface-bright rounded p-6">
+<h4 class="font-technical-mono text-technical-mono text-on-surface mb-2 flex justify-between">
+                        Nilüfer’de oto tamir hizmeti veriyor musunuz?
+                        <span class="material-symbols-outlined text-secondary">add</span>
+</h4>
+<p class="font-body-md text-body-md text-secondary mt-4 border-t border-outline-variant/10 pt-4">
+                        Evet, servisimiz Bursa Nilüfer'de bulunmakta olup, ilçe genelindeki tüm araç sahiplerine tam kapsamlı oto tamir, bakım ve onarım hizmeti sunmaktadır.
+                    </p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-surface-container border border-surface-bright rounded p-6">
+<h4 class="font-technical-mono text-technical-mono text-on-surface mb-2 flex justify-between">
+                        Yol yardım hizmetiniz var mı?
+                        <span class="material-symbols-outlined text-secondary">add</span>
+</h4>
+<p class="font-body-md text-body-md text-secondary mt-4 border-t border-outline-variant/10 pt-4">
+                        Evet, Nilüfer ve çevresi için 7 gün 24 saat kesintisiz acil yol yardım ve çekici hizmeti sağlamaktayız.
+                    </p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-surface-container border border-surface-bright rounded p-6">
+<h4 class="font-technical-mono text-technical-mono text-on-surface mb-2 flex justify-between">
+                        BMW, Mercedes, Audi araçlara bakıyor musunuz?
+                        <span class="material-symbols-outlined text-secondary">add</span>
+</h4>
+<p class="font-body-md text-body-md text-secondary mt-4 border-t border-outline-variant/10 pt-4">
+                        Kesinlikle. Bu üç Alman premium markası ana uzmanlık alanımızdır. Orijinal diagnostik yazılımları ve özel servis aparatları ile hizmet veriyoruz.
+                    </p>
+</div>
+<!-- FAQ Item 4 -->
+<div class="bg-surface-container border border-surface-bright rounded p-6">
+<h4 class="font-technical-mono text-technical-mono text-on-surface mb-2 flex justify-between">
+                        Randevu almak gerekir mi?
+                        <span class="material-symbols-outlined text-secondary">add</span>
+</h4>
+<p class="font-body-md text-body-md text-secondary mt-4 border-t border-outline-variant/10 pt-4">
+                        Acil durumlar haricinde, size daha hızlı ve planlı hizmet verebilmemiz için gelmeden önce telefon veya WhatsApp üzerinden randevu almanızı tavsiye ederiz.
+                    </p>
+</div>
+</div>
+</section>
+<!-- İletişim ve Konum -->
+<section class="max-w-max-width mx-auto px-base md:px-gutter mb-20">
+<div class="bg-surface-container-high border border-outline-variant/20 rounded-xl overflow-hidden flex flex-col md:flex-row">
+<!-- Info -->
+<div class="p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-6">
+                        İletişim ve Konum
+                    </h2>
+<p class="font-body-md text-body-md text-secondary mb-8">
+                        Nilüfer’de oto servis arıyorsanız, profesyonel ekibimizle tanışmak ve aracınız için en doğru çözümü bulmak üzere ERZ GARAGE ile iletişime geçin.
+                    </p>
+<div class="space-y-6 mb-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container">call</span>
+<div class="font-technical-mono text-technical-mono text-on-surface">0538 585 8157</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container">chat</span>
+<div class="font-technical-mono text-technical-mono text-on-surface">WhatsApp Destek Hattı</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container">location_on</span>
+<div class="font-technical-mono text-technical-mono text-on-surface">Nilüfer, Bursa</div>
+</div>
+</div>
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-4 rounded hover:bg-error-container transition-all self-start shadow-sm border border-transparent hover:border-on-primary-container/20" href="tel:05385858157">
+                        BİZİ ARAYIN
+                    </a>
+</div>
+<!-- Map Placeholder -->
+<div class="md:w-1/2 h-64 md:h-auto bg-surface-dim relative border-l border-outline-variant/20">
+<div class="absolute inset-0 flex items-center justify-center flex-col text-secondary/50">
+<span class="material-symbols-outlined text-6xl mb-2" data-location="Bursa Nilüfer">map</span>
+<span class="font-technical-mono text-sm">Harita Yükleniyor...</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-base md:px-gutter py-16 max-w-container-max-width mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-headline-md text-headline-md font-bold text-on-surface mb-4">
+                    ERZ GARAGE
+                </div>
+<div class="font-body-md text-body-md text-secondary/80 max-w-sm">
+                    © 2024 ERZ GARAGE Bursa Nilüfer. Professional Automotive Excellence.
+                </div>
+</div>
+<div class="col-span-1 flex flex-col space-y-3 font-body-md text-body-md">
+<a class="text-secondary/80 hover:text-primary transition-all" href="#">Hizmetlerimiz</a>
+<a class="text-secondary/80 hover:text-primary transition-all" href="#">BMW Servis</a>
+<a class="text-secondary/80 hover:text-primary transition-all" href="#">Mercedes Servis</a>
+</div>
+<div class="col-span-1 flex flex-col space-y-3 font-body-md text-body-md">
+<a class="text-secondary/80 hover:text-primary transition-all" href="#">Audi Servis</a>
+<a class="text-secondary/80 hover:text-primary transition-all" href="#">Yol Yardım</a>
+<a class="text-secondary/80 hover:text-primary transition-all" href="#">Gizlilik Politikası</a>
+</div>
+</div>
+</footer>
+</body></html>

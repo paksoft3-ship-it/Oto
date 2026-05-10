@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bursa Nilüfer Şanzıman Tamiri ve Kontrolü | ERZ GARAGE</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=JetBrains+Mono:wght@500&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#141c25",
+                        "tertiary-container": "#6c747f",
+                        "outline-variant": "#5d3f3d",
+                        "on-primary": "#68000c",
+                        "on-background": "#dbe3ef",
+                        "tertiary-fixed-dim": "#bfc7d4",
+                        "on-secondary-fixed-variant": "#42474f",
+                        "outline": "#ad8885",
+                        "on-tertiary-container": "#f9faff",
+                        "primary-container": "#e11d2e",
+                        "on-tertiary": "#29313b",
+                        "on-secondary-container": "#b1b5bf",
+                        "surface-container-lowest": "#070f17",
+                        "inverse-primary": "#c0001f",
+                        "tertiary-fixed": "#dbe3f0",
+                        "surface-container": "#182029",
+                        "on-primary-fixed": "#410004",
+                        "surface-tint": "#ffb3ae",
+                        "primary": "#ffb3ae",
+                        "surface-dim": "#0c141c",
+                        "error-container": "#93000a",
+                        "surface-variant": "#2e363e",
+                        "on-surface": "#dbe3ef",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#2c3138",
+                        "inverse-surface": "#dbe3ef",
+                        "surface-container-highest": "#2e363e",
+                        "on-primary-container": "#fff8f7",
+                        "secondary-container": "#42474f",
+                        "error": "#ffb4ab",
+                        "surface-container-high": "#232b33",
+                        "on-tertiary-fixed-variant": "#3f4752",
+                        "surface-container-low": "#141c24",
+                        "surface": "#0c141c",
+                        "primary-fixed-dim": "#ffb3ae",
+                        "on-primary-fixed-variant": "#930015",
+                        "tertiary": "#bfc7d4",
+                        "surface-bright": "#323a43",
+                        "background": "#0c141c",
+                        "inverse-on-surface": "#29313a",
+                        "on-secondary-fixed": "#171c23",
+                        "secondary-fixed": "#dee2ec",
+                        "on-error": "#690005",
+                        "secondary": "#c2c7d0",
+                        "secondary-fixed-dim": "#c2c7d0",
+                        "primary-fixed": "#ffdad7",
+                        "on-surface-variant": "#e6bdb9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "max-width": "1280px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "technical-mono": ["JetBrains Mono"],
+                        "label-caps": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-xl": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "technical-mono": ["14px", { "lineHeight": "1.5", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant/10 shadow-sm">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-[1280px] mx-auto h-20">
+<!-- Brand Logo -->
+<div class="font-headline-md text-headline-md font-extrabold tracking-tighter text-primary">
+                ERZ GARAGE
+            </div>
+<!-- Navigation (Web) -->
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200" href="#">Anasayfa</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200" href="#">Hakkımızda</a>
+<!-- Active Nav Item based on intent (/hizmetler) -->
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 font-bold" href="#">Hizmetler</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200" href="#">Markalar</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200" href="#">Yol Yardım</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200" href="#">İletişim</a>
+</nav>
+<!-- Trailing Action -->
+<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-4 py-3 rounded-DEFAULT hover:bg-inverse-primary transition-colors hover:scale-95 duration-150 border border-transparent hover:border-surface-tint">
+                Hemen Ara
+            </button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center justify-center border-b border-surface-variant overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Transmission gear repair" class="w-full h-full object-cover opacity-30" data-alt="A highly detailed close-up shot of a complex metallic car transmission system inside a professional automotive workshop. The gears and mechanical components are precision-machined, catching a mix of cold industrial light and dramatic, electric red accent lighting. The overall mood is intense, technical, and high-performance, reflecting a premium dark corporate aesthetic. The background is a deep, shadowy graphite, emphasizing the metallic textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXbCcb-EDFpiVzqVwzdtlU6oDpx2_xbq6t26O0BJV17ie56EVK0RFTaeS9HHNya3RA-HEdfD30tDMR_oSJzc9iwphz0z1Fdx7AV6tAOpqjqKng8xJduM-NrcL8tM_AyG5XPSFx1uONBc-8jHuMWDCJJ1fvHMSaCZTSdqkButp2mNw6ib9zDduCvtbuN-2yTk4ZWu0MNmfWThBgKhhU1AxgvpcCVVzEuVBOAaDVGneiOCbDVS-PjofA_cECfEf-zDIlPXcxTvm7jAY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-base md:px-gutter text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container border border-surface-variant rounded-full mb-6">
+<span class="material-symbols-outlined text-primary text-sm icon-fill">precision_manufacturing</span>
+<span class="font-technical-mono text-technical-mono text-secondary">HİZMET DETAYI</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-6 max-w-4xl mx-auto">
+                    Bursa Nilüfer Şanzıman <br class="hidden md:block"/>Tamiri ve Kontrolü
+                </h1>
+<p class="font-body-lg text-body-lg text-secondary mb-10 max-w-2xl mx-auto">
+                    Vites geçişlerinde sarsıntı, ses, gecikme veya performans problemi yaşıyorsanız ERZ GARAGE Bursa Nilüfer’de profesyonel şanzıman kontrol ve onarım hizmeti sunuyoruz.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded-DEFAULT hover:bg-inverse-primary border border-transparent hover:border-surface-tint transition-all">
+                        RANDEVU AL
+                    </button>
+<button class="bg-transparent text-on-surface font-label-caps text-label-caps px-8 py-4 rounded-DEFAULT border-2 border-surface-variant hover:border-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">support_agent</span>
+                        UZMANA DANIŞ
+                    </button>
+</div>
+</div>
+</section>
+<!-- Symptoms Section -->
+<section class="py-margin-desktop bg-surface">
+<div class="max-w-[1280px] mx-auto px-base md:px-gutter">
+<div class="mb-12 border-l-4 border-primary pl-4">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Şanzıman Arıza Belirtileri</h2>
+<p class="font-body-md text-body-md text-secondary mt-2">Bu semptomlardan herhangi birini yaşıyorsanız, acil teknik kontrol gereklidir.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-base md:gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container border border-surface-variant p-6 rounded-DEFAULT hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform icon-fill">vibration</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Vites Geçişlerinde Sarsıntı</h3>
+<p class="font-body-md text-body-md text-secondary">Özellikle otomatik şanzımanlarda vuruşlu ve sert geçişler.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container border border-surface-variant p-6 rounded-DEFAULT hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform icon-fill">update</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Geçişlerde Gecikme</h3>
+<p class="font-body-md text-body-md text-secondary">Gaza basıldığında devir artmasına rağmen vitesin geç yükselmesi.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container border border-surface-variant p-6 rounded-DEFAULT hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform icon-fill">speed</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Araçta Titreme</h3>
+<p class="font-body-md text-body-md text-secondary">Belirli hızlarda veya kalkış esnasında anormal titreşimler.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container border border-surface-variant p-6 rounded-DEFAULT hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform icon-fill">water_drop</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Yağ Kaçağı</h3>
+<p class="font-body-md text-body-md text-secondary">Aracın altında kırmızı veya kahverengi sıvı birikintileri.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container border border-surface-variant p-6 rounded-DEFAULT hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform icon-fill">warning</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Uyarı Işığı</h3>
+<p class="font-body-md text-body-md text-secondary">Gösterge panelinde motor veya şanzıman arıza lambasının yanması.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container border border-surface-variant p-6 rounded-DEFAULT hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform icon-fill">volume_up</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Normal Dışı Ses</h3>
+<p class="font-body-md text-body-md text-secondary">Vites boşta veya seyir halindeyken uğultu, sürtünme veya vuruntu sesleri.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Scope Section (Bento Grid Style) -->
+<section class="py-margin-desktop bg-surface-container-lowest">
+<div class="max-w-[1280px] mx-auto px-base md:px-gutter">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12 text-center">Hizmet Kapsamı</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-base md:gap-gutter">
+<!-- Main Diagnostic Block -->
+<div class="md:col-span-2 bg-surface-container border border-surface-variant rounded-DEFAULT p-8 relative overflow-hidden">
+<div class="absolute right-0 top-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined" style="font-size: 200px;">troubleshoot</span>
+</div>
+<div class="font-technical-mono text-technical-mono text-primary mb-4">AŞAMA 01</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Şanzıman Arıza Tespiti &amp; Elektronik Analiz</h3>
+<p class="font-body-md text-body-md text-secondary max-w-lg mb-6">Orijinal diagnostik cihazlar ile şanzıman beynine (TCM) bağlanarak hata kodları okunur. Adaptasyon değerleri ve sensör verileri canlı olarak incelenerek noktasal arıza tespiti yapılır.</p>
+<div class="h-1 w-24 bg-surface-variant relative">
+<div class="absolute top-0 left-0 h-full w-1/3 bg-primary"></div>
+</div>
+</div>
+<!-- Side blocks -->
+<div class="bg-surface-container border border-surface-variant rounded-DEFAULT p-6">
+<div class="font-technical-mono text-technical-mono text-primary mb-2">AŞAMA 02</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Yağ ve Kaçak Kontrolü</h3>
+<p class="font-body-md text-body-md text-secondary">Şanzıman yağ seviyesi, viskozitesi ve yanık kokusu analizi. Karter ve keçe kaçak kontrolleri.</p>
+</div>
+<div class="bg-surface-container border border-surface-variant rounded-DEFAULT p-6">
+<div class="font-technical-mono text-technical-mono text-primary mb-2">AŞAMA 03</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Mekanik Kontrol</h3>
+<p class="font-body-md text-body-md text-secondary">Lifte alınarak akslar, kulaklar ve mekanik bağlantıların fiziki muayenesi.</p>
+</div>
+<div class="bg-surface-container border border-surface-variant rounded-DEFAULT p-6">
+<div class="font-technical-mono text-technical-mono text-primary mb-2">AŞAMA 04</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Teknik Servis Önerisi</h3>
+<p class="font-body-md text-body-md text-secondary">Elde edilen bulgular doğrultusunda optimum müdahale yönteminin belirlenmesi.</p>
+</div>
+<div class="bg-surface-container border border-surface-variant rounded-DEFAULT p-6">
+<div class="font-technical-mono text-technical-mono text-primary mb-2">AŞAMA 05</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Onarım Planlaması</h3>
+<p class="font-body-md text-body-md text-secondary">Maliyet ve zaman analizinin yapılıp müşteriye şeffaf şekilde raporlanması.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Auto vs Manual & Luxury Brands -->
+<section class="py-margin-desktop bg-surface">
+<div class="max-w-[1280px] mx-auto px-base md:px-gutter">
+<!-- Contrast Blocks -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-base md:gap-gutter mb-margin-desktop">
+<div class="bg-surface-container-high border-t border-primary p-8">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-4">Otomatik Şanzıman Uzmanlığı</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">DSG, S-Tronic, ZF, 7G-Tronic ve 9G-Tronic gibi karmaşık otomatik şanzıman sistemlerinde mekatronik onarımı, kavrama değişimi ve beyin programlama işlemleri büyük bir hassasiyetle gerçekleştirilir.</p>
+<ul class="space-y-3 font-technical-mono text-technical-mono text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Mekatronik Kart Tamiri</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Kavrama ve Volan Değişimi</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Adaptasyon ve Yazılım Güncelleme</li>
+</ul>
+</div>
+<div class="bg-surface-container-low border border-surface-variant p-8">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-4">Manuel Şanzıman Revizyonu</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">Geleneksel manuel sistemlerde dişli grupları, senkromeçler, prizdirekt bilyaları ve baskı-balata setlerinin yüksek kaliteli yedek parçalarla değişim ve revizyonu.</p>
+<ul class="space-y-3 font-technical-mono text-technical-mono text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Baskı Balata Seti Değişimi</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Senkromeç ve Dişli Onarımı</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Şanzıman Yağı Değişimi</li>
+</ul>
+</div>
+</div>
+<!-- Luxury Brands Support -->
+<div class="border border-surface-variant bg-surface-container p-8 text-center flex flex-col items-center">
+<span class="font-label-caps text-label-caps text-primary tracking-widest mb-4 block">PREMIUM MARKA DESTEĞİ</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-8">Alman Mühendisliğine Özel Teşhis</h3>
+<div class="flex flex-wrap justify-center gap-8 md:gap-16">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 bg-surface-container-highest border border-surface-variant rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">directions_car</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">BMW</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 bg-surface-container-highest border border-surface-variant rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">stars</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">Mercedes</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 bg-surface-container-highest border border-surface-variant rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">trip_origin</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">Audi</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-margin-desktop bg-surface-container-lowest border-t border-surface-variant">
+<div class="max-w-[800px] mx-auto px-base md:px-gutter">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8 text-center">Sıkça Sorulan Sorular</h2>
+<div class="space-y-4">
+<div class="border border-surface-variant bg-surface-container p-6">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Şanzıman arızası nasıl anlaşılır?</h4>
+<p class="font-body-md text-body-md text-secondary">Vites geçişlerinde vuruntu, devir saatinin artmasına rağmen hızlanamama, araç altında kırmızı/kahverengi yağ kaçağı, yanık kokusu veya gösterge panelinde beliren dişli/motor uyarı ışıkları temel belirtilerdir.</p>
+</div>
+<div class="border border-surface-variant bg-surface-container p-6">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Şanzıman yağı ne zaman değişir?</h4>
+<p class="font-body-md text-body-md text-secondary">Üretici standartlarına göre değişmekle birlikte, otomatik şanzımanlarda genellikle 60.000 ile 80.000 km arasında, manuel şanzımanlarda ise 100.000 km'de bir kontrol edilip değiştirilmesi önerilir.</p>
+</div>
+<div class="border border-surface-variant bg-surface-container p-6">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Sarsıntılı vites geçişi normal mi?</h4>
+<p class="font-body-md text-body-md text-secondary">Hayır, sağlıklı bir şanzıman sistemi sarsıntısız ve pürüzsüz vites değiştirmelidir. Sarsıntı genellikle mekatronik, kavrama veya yağ basıncı ile ilgili bir problemin habercisidir.</p>
+</div>
+<div class="border border-surface-variant bg-surface-container p-6">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Şanzıman kontrolü ne kadar sürer?</h4>
+<p class="font-body-md text-body-md text-secondary">Diagnostik testler, yol testi ve fiziki kontrolleri içeren detaylı bir şanzıman arıza tespiti genellikle 1-2 saat sürmektedir.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-margin-desktop bg-surface-container relative overflow-hidden border-t border-primary/30">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/10 to-transparent pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-base md:px-gutter text-center relative z-10">
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-6">Şanzıman problemini büyümeden çözmek için hemen arayın.</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-8 max-w-2xl mx-auto">İleri teknoloji arıza tespit cihazlarımız ve uzman kadromuzla yanınızdayız.</p>
+<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-10 py-5 hover:bg-inverse-primary border border-transparent hover:border-surface-tint transition-all text-lg">
+                    0555 123 45 67
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-base md:px-gutter py-margin-desktop max-w-[1280px] mx-auto">
+<!-- Brand / Copyright Area -->
+<div class="md:col-span-1 flex flex-col gap-4">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">
+                    ERZ GARAGE
+                </div>
+<p class="font-body-md text-body-md text-secondary/80">
+                    © 2024 ERZ GARAGE Bursa Nilüfer. Professional Automotive Excellence.
+                </p>
+</div>
+<!-- Links Area (Span remaining columns logically) -->
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-3">
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">Hizmetlerimiz</a>
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">BMW Servis</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">Mercedes Servis</a>
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">Audi Servis</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">Yol Yardım</a>
+<a class="font-label-caps text-label-caps text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary inline-block w-fit" href="#">Gizlilik Politikası</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

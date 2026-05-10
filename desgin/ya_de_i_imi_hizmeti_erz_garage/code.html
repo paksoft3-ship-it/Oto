@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yağ Değişimi | ERZ GARAGE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=JetBrains+Mono:wght@500&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#232b33",
+                      "surface": "#0c141c",
+                      "on-primary-fixed": "#410004",
+                      "primary-fixed": "#ffdad7",
+                      "inverse-on-surface": "#29313a",
+                      "on-tertiary-fixed-variant": "#3f4752",
+                      "on-error-container": "#ffdad6",
+                      "outline": "#ad8885",
+                      "error": "#ffb4ab",
+                      "on-background": "#dbe3ef",
+                      "surface-variant": "#2e363e",
+                      "inverse-primary": "#c0001f",
+                      "tertiary": "#bfc7d4",
+                      "surface-container-highest": "#2e363e",
+                      "on-primary-container": "#fff8f7",
+                      "surface-dim": "#0c141c",
+                      "surface-container": "#182029",
+                      "secondary-fixed": "#dee2ec",
+                      "outline-variant": "#5d3f3d",
+                      "on-secondary": "#2c3138",
+                      "primary-fixed-dim": "#ffb3ae",
+                      "on-tertiary-fixed": "#141c25",
+                      "tertiary-fixed": "#dbe3f0",
+                      "surface-bright": "#323a43",
+                      "on-surface-variant": "#e6bdb9",
+                      "on-primary": "#68000c",
+                      "on-error": "#690005",
+                      "on-secondary-fixed": "#171c23",
+                      "on-tertiary-container": "#f9faff",
+                      "tertiary-container": "#6c747f",
+                      "on-secondary-fixed-variant": "#42474f",
+                      "primary-container": "#e11d2e",
+                      "error-container": "#93000a",
+                      "secondary-fixed-dim": "#c2c7d0",
+                      "background": "#0c141c",
+                      "surface-tint": "#ffb3ae",
+                      "surface-container-low": "#141c24",
+                      "inverse-surface": "#dbe3ef",
+                      "surface-container-lowest": "#070f17",
+                      "secondary-container": "#42474f",
+                      "secondary": "#c2c7d0",
+                      "on-secondary-container": "#b1b5bf",
+                      "primary": "#ffb3ae",
+                      "on-tertiary": "#29313b",
+                      "on-primary-fixed-variant": "#930015",
+                      "tertiary-fixed-dim": "#bfc7d4",
+                      "on-surface": "#dbe3ef"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "16px",
+                      "max-width": "1280px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "technical-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "headline-xl": [
+                              "Manrope"
+                      ],
+                      "headline-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "technical-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+      </style>
+</head>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/10 shadow-sm">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-container-max-width mx-auto h-20 max-w-[1280px]">
+<a class="font-headline-md text-headline-md font-extrabold tracking-tighter text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-sm" href="/">
+                ERZ GARAGE
+            </a>
+<nav class="hidden md:flex gap-8 items-center h-full">
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200 h-full flex items-center" href="#">Anasayfa</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200 h-full flex items-center" href="#">Hakkımızda</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 font-bold h-full flex items-center mt-1" href="#">Hizmetler</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200 h-full flex items-center" href="#">Markalar</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200 h-full flex items-center" href="#">Yol Yardım</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200 h-full flex items-center" href="#">İletişim</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:inline-flex bg-primary-container text-on-primary-container px-6 py-2 rounded-DEFAULT font-label-caps text-label-caps hover:bg-primary-container/90 transition-colors border border-transparent focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 focus:ring-offset-background hover:border-white/20">
+                    Hemen Ara
+                </button>
+<button aria-label="Menu" class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center justify-center overflow-hidden border-b border-surface-variant">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent z-10"></div>
+<img alt="Professional mechanic changing oil in a premium German vehicle" class="w-full h-full object-cover object-center grayscale opacity-40" data-alt="A cinematic, high-contrast medium shot of a professional mechanic pouring fresh, golden synthetic oil into the engine block of a high-performance German luxury car. The scene is set in a pristine, darkly atmospheric automotive workshop, illuminated by harsh, surgical white overhead lights that cast deep shadows. The aesthetic is purely technical and premium, utilizing deep black backgrounds, metallic graphite surfaces, and sudden, striking accents of electric red on tools and diagnostic equipment. The mood is precise, serious, and deeply technical." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFu5lxxtffq7k9Cr6Qk3t7HnIZqCF8I77LtW-jPrQp1lDfrH5iQS-3CcE1_e3KE4tKofpeZkuLmdcXS2PXcEQWmpVKpWG8v6DRT03fmApiq9yIt8e9JtC5iFWr50gjGqNkmf0r5rI8tb_1k2AlQwg_lwfdLtKopqE0oGHwHYazwEy0Ne99YZkn2iTWuwpfzeweGmD7Sdjy5Y6viF6gIIj1cx0vlkGEkWXgJblXAOEQSxQRSuGsYRJ5oMrkatRYUefvbX8Kb8VYPFs"/>
+</div>
+<div class="container mx-auto px-margin-mobile md:px-gutter max-w-max-width relative z-20 py-20">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container border border-outline-variant/30 rounded-full mb-6">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-technical-mono text-technical-mono text-secondary">HİZMET DETAYI</span>
+</div>
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-6">
+                        Bursa Nilüfer<br/>
+<span class="text-primary-container">Yağ Değişimi Hizmeti</span>
+</h1>
+<p class="font-body-lg text-body-lg text-secondary mb-10 max-w-2xl">
+                        Motor yağının düzenli değişimi aracınızın motor ömrü ve performansı için kritik öneme sahiptir. ERZ GARAGE Bursa Nilüfer'de profesyonel yağ değişimi ve filtre kontrol hizmeti sunuyoruz.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-DEFAULT font-label-caps text-label-caps hover:bg-primary-container/90 transition-all border border-transparent hover:border-white/20" href="tel:05385858157">
+<span class="material-symbols-outlined text-[18px]" data-icon="call">call</span>
+                            Hemen Ara: 0538 585 8157
+                        </a>
+<a class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-surface-variant text-on-surface px-8 py-4 rounded-DEFAULT font-label-caps text-label-caps hover:bg-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
+                            WhatsApp'tan Yaz
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Neden Önemli -->
+<section class="py-24 bg-background">
+<div class="container mx-auto px-margin-mobile md:px-gutter max-w-max-width">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Yağ değişimi <br/>neden önemlidir?</h2>
+<div class="space-y-6 font-body-md text-body-md text-secondary">
+<p>
+                                Motor yağı, aracınızın kalbi olan motorun sorunsuz çalışmasını sağlayan en hayati sıvıdır. Yüksek ısı ve sürtünme altında çalışan motor parçaları, ancak kaliteli ve temiz bir yağ ile korunabilir.
+                            </p>
+<p>
+                                Zamanla motor yağı özelliğini kaybeder, viskozitesi düşer ve içine karışan mikro partiküller nedeniyle aşındırıcı bir yapıya bürünebilir. ERZ GARAGE olarak, motorunuzun soğutulması, temizlenmesi ve yağlanması için periyodik yağ değişimini asla aksatmamanızı tavsiye ediyoruz.
+                            </p>
+</div>
+<div class="mt-8 grid grid-cols-2 gap-4">
+<div class="bg-surface-container p-4 border border-outline-variant/20 rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary-container mb-2" data-icon="thermostat">thermostat</span>
+<h3 class="font-technical-mono text-technical-mono text-on-surface mb-1">Isı Kontrolü</h3>
+<p class="text-[12px] text-tertiary">Sürtünmeyi azaltarak motor ısısını dengeler.</p>
+</div>
+<div class="bg-surface-container p-4 border border-outline-variant/20 rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary-container mb-2" data-icon="cleaning_services">cleaning_services</span>
+<h3 class="font-technical-mono text-technical-mono text-on-surface mb-1">Motor Temizliği</h3>
+<p class="text-[12px] text-tertiary">Karbon birikintilerini ve tortuları temizler.</p>
+</div>
+</div>
+</div>
+<div class="relative h-[500px] border border-outline-variant/20 rounded-DEFAULT overflow-hidden">
+<img alt="Clean, fresh golden motor oil being poured" class="w-full h-full object-cover object-center" data-alt="A hyper-detailed macro shot of fresh, luminous amber synthetic motor oil being poured smoothly into a metallic funnel above an engine block. The background is cast in deep, atmospheric graphite tones to emphasize the clarity and purity of the liquid. The scene is lit with clinical precision, utilizing high-contrast stark lighting to highlight the viscosity and premium quality of the oil against the dark, high-end automotive workshop environment. Subtle glints of red from nearby diagnostic tools faintly reflect in the metal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbuSAPhZqz4IvkeWQ2zz09Cixn8lGNa6WR6nsFSPGdDWcBfK3S6wBhZAHNnMsCCuaWevc584nDkK7BiWGTvCJETa8Lb_vwMIGeElC6qke-61FlbufjWi8uoYGrYA0s408Wi2pQQ0cQqCllABdqUm2ebpzYGxdObzzLP-rnJderdBgXccTr0dBjjDBSIVeoYSeS1o4frc5ANxTrkD58TEPK-cySlnj6dsi9lSjqRCh1zJyWhsw-_xYW1qS91vUkW-J8DuNAksZJ69E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Gecikirse Ne Olur (Warning Cards) -->
+<section class="py-24 bg-surface-container-low border-y border-surface-variant">
+<div class="container mx-auto px-margin-mobile md:px-gutter max-w-max-width">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Yağ değişimi gecikirse ne olur?</h2>
+<p class="font-body-md text-body-md text-secondary">Periyodik bakımın aksatılması, geri dönüşü zor ve maliyetli motor hasarlarına yol açabilir.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+<!-- Card 1 -->
+<div class="bg-surface border-t border-surface-variant hover:border-t-primary-container transition-colors p-6 flex flex-col group">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors" data-icon="warning">warning</span>
+</div>
+<h3 class="font-headline-md text-[18px] leading-snug text-on-surface mb-2">Motor aşınması</h3>
+<p class="font-body-md text-[14px] text-tertiary mt-auto">Sürtünme artar, hayati parçalar hızla aşınır.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface border-t border-surface-variant hover:border-t-primary-container transition-colors p-6 flex flex-col group">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors" data-icon="trending_down">trending_down</span>
+</div>
+<h3 class="font-headline-md text-[18px] leading-snug text-on-surface mb-2">Performans düşüşü</h3>
+<p class="font-body-md text-[14px] text-tertiary mt-auto">Motor gücü azalır, tepkiler yavaşlar.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface border-t border-surface-variant hover:border-t-primary-container transition-colors p-6 flex flex-col group">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors" data-icon="local_gas_station">local_gas_station</span>
+</div>
+<h3 class="font-headline-md text-[18px] leading-snug text-on-surface mb-2">Yakıt tüketimi artışı</h3>
+<p class="font-body-md text-[14px] text-tertiary mt-auto">Zorlanan motor daha fazla yakıt harcar.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface border-t border-surface-variant hover:border-t-primary-container transition-colors p-6 flex flex-col group">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors" data-icon="volume_up">volume_up</span>
+</div>
+<h3 class="font-headline-md text-[18px] leading-snug text-on-surface mb-2">Motor sesinde artış</h3>
+<p class="font-body-md text-[14px] text-tertiary mt-auto">Metal metale sürtünme sesleri belirginleşir.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface border-t border-surface-variant hover:border-t-primary-container transition-colors p-6 flex flex-col group">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors" data-icon="car_crash">car_crash</span>
+</div>
+<h3 class="font-headline-md text-[18px] leading-snug text-on-surface mb-2">Ciddi motor arızaları</h3>
+<p class="font-body-md text-[14px] text-tertiary mt-auto">Yatak sarma gibi ağır maliyetli hasarlar oluşur.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Hizmet Kapsamı & Section 4: Premium Focus (Bento Layout) -->
+<section class="py-24 bg-background">
+<div class="container mx-auto px-margin-mobile md:px-gutter max-w-max-width">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Hizmet Kapsamı -->
+<div class="lg:col-span-1 bg-surface border border-surface-variant p-8 rounded-DEFAULT flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8">Hizmet Kapsamı</h2>
+<div class="space-y-6 flex-grow">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 border border-surface-variant">
+<span class="font-technical-mono text-[12px] text-primary-container">01</span>
+</div>
+<div>
+<h4 class="font-technical-mono text-[14px] text-on-surface mb-1">Motor yağı değişimi</h4>
+<p class="font-body-md text-[13px] text-tertiary">Tam sentetik, araca uygun speklerde yağ kullanımı.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 border border-surface-variant">
+<span class="font-technical-mono text-[12px] text-primary-container">02</span>
+</div>
+<div>
+<h4 class="font-technical-mono text-[14px] text-on-surface mb-1">Yağ filtresi kontrolü</h4>
+<p class="font-body-md text-[13px] text-tertiary">Orijinal veya OEM kalitesinde filtre değişimi.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 border border-surface-variant">
+<span class="font-technical-mono text-[12px] text-primary-container">03</span>
+</div>
+<div>
+<h4 class="font-technical-mono text-[14px] text-on-surface mb-1">Hava/kabin filtresi önerisi</h4>
+<p class="font-body-md text-[13px] text-tertiary">Filtrelerin durum analizi ve değişim tavsiyesi.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 border border-surface-variant">
+<span class="font-technical-mono text-[12px] text-primary-container">04</span>
+</div>
+<div>
+<h4 class="font-technical-mono text-[14px] text-on-surface mb-1">Sıvı kontrolleri</h4>
+<p class="font-body-md text-[13px] text-tertiary">Antifriz, fren hidroliği ve cam suyu seviye kontrolü.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 border border-surface-variant">
+<span class="font-technical-mono text-[12px] text-primary-container">05</span>
+</div>
+<div>
+<h4 class="font-technical-mono text-[14px] text-on-surface mb-1">Genel motor kontrolü</h4>
+<p class="font-body-md text-[13px] text-tertiary">Gözle görünür kaçak veya deformasyon tespiti.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Premium Car Focus -->
+<div class="lg:col-span-2 relative border border-surface-variant rounded-DEFAULT overflow-hidden group min-h-[400px] flex flex-col justify-end p-8">
+<img alt="Luxury German vehicle in a professional workshop" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-60 grayscale mix-blend-luminosity" data-alt="A wide, dramatic shot of a high-end German luxury sedan (resembling a modern BMW or Audi) positioned on a heavy-duty hydraulic lift in a spotless, dark-themed automotive workshop. The scene is characterized by deep graphite and black tones, punctuated by the metallic sheen of the car's paint and the sharp, bright red accents of rolling tool cabinets in the background. The lighting is focused and surgical, highlighting the intricate engineering under the vehicle. The overall aesthetic is ultra-premium, technical, and intensely professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtFTl31Z5tT8gs38Jak-P-_Tg9K_lQVWFhigObNKETjjrAcVBZnekitoYkyqxGd0E5k7UpYbMSmmrOmgIoeAp3FKNtg1i6EZ14do-T74Lr7UK_jIRgc_SidzVIUh5PqqYj2jcazSq__vE6MD5FF_tMn5PT9mVXN2On_X4XuDBx6DiQmjJJuXduw5BaPU_VkH584rNyI9CM0fhqjbFG9MqBB35pn_fh1jBCl1k02NHCDu8z8FvL63WWa5T9F0fojERTpstMUlYUymo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+<div class="relative z-10">
+<div class="flex gap-4 mb-4">
+<div class="px-3 py-1 bg-surface/50 backdrop-blur border border-outline-variant/30 text-secondary font-technical-mono text-[12px] uppercase">BMW</div>
+<div class="px-3 py-1 bg-surface/50 backdrop-blur border border-outline-variant/30 text-secondary font-technical-mono text-[12px] uppercase">Mercedes</div>
+<div class="px-3 py-1 bg-surface/50 backdrop-blur border border-outline-variant/30 text-secondary font-technical-mono text-[12px] uppercase">Audi</div>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Uygun Bakım Yaklaşımı</h2>
+<p class="font-body-md text-body-md text-secondary max-w-xl mb-6">
+                                Alman mühendisliği kusursuzluk gerektirir. ERZ GARAGE olarak, BMW, Mercedes ve Audi araçlarınız için yalnızca üretici onaylı (OEM) yağlar ve premium filtre grupları kullanıyoruz. Motorunuzun teknik toleranslarına tam uyum sağlayan sıvılarla maksimum koruma garantisi sunuyoruz.
+                            </p>
+<!-- Diagnostic Bar -->
+<div class="max-w-md">
+<div class="flex justify-between font-technical-mono text-[10px] text-tertiary mb-2 uppercase">
+<span>OEM Onaylı Sıvı Kullanımı</span>
+<span>100%</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-full relative">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[shimmer_2s_infinite]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: FAQ -->
+<section class="py-24 bg-surface-container-low border-t border-surface-variant">
+<div class="container mx-auto px-margin-mobile md:px-gutter max-w-max-width">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12 text-center">Sıkça Sorulan Sorular</h2>
+<div class="space-y-4">
+<!-- Q1 -->
+<details class="group bg-surface border border-surface-variant rounded-DEFAULT overflow-hidden [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline-md text-[18px] text-on-surface hover:bg-surface-variant/50 transition-colors">
+                                Yağ değişimi kaç km’de yapılır?
+                                <span class="material-symbols-outlined text-primary-container group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-body-md text-secondary border-t border-surface-variant/50">
+                                Genel olarak modern araçlarda 10.000 ile 15.000 km arasında veya yılda bir kez (hangisi önce dolarsa) yağ değişimi yapılması önerilir. Ancak kullanım koşulları ve üretici tavsiyeleri bu süreyi değiştirebilir.
+                            </div>
+</details>
+<!-- Q2 -->
+<details class="group bg-surface border border-surface-variant rounded-DEFAULT overflow-hidden [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline-md text-[18px] text-on-surface hover:bg-surface-variant/50 transition-colors">
+                                Hangi yağ kullanılmalı?
+                                <span class="material-symbols-outlined text-primary-container group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-body-md text-secondary border-t border-surface-variant/50">
+                                Aracınızın marka, model ve motor tipine göre üretici tarafından belirlenen spesifikasyonlara (vizkosite ve onay kodları) uygun, tercihen tam sentetik premium motor yağları kullanılmalıdır.
+                            </div>
+</details>
+<!-- Q3 -->
+<details class="group bg-surface border border-surface-variant rounded-DEFAULT overflow-hidden [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline-md text-[18px] text-on-surface hover:bg-surface-variant/50 transition-colors">
+                                Yağ filtresi de değişmeli mi?
+                                <span class="material-symbols-outlined text-primary-container group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-body-md text-secondary border-t border-surface-variant/50">
+                                Kesinlikle evet. Her yağ değişiminde, kirli partikülleri süzerek yeni yağın temiz kalmasını sağlayan yağ filtresi mutlaka yenisiyle değiştirilmelidir.
+                            </div>
+</details>
+<!-- Q4 -->
+<details class="group bg-surface border border-surface-variant rounded-DEFAULT overflow-hidden [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline-md text-[18px] text-on-surface hover:bg-surface-variant/50 transition-colors">
+                                İşlem ne kadar sürer?
+                                <span class="material-symbols-outlined text-primary-container group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-body-md text-secondary border-t border-surface-variant/50">
+                                Standart bir yağ değişimi ve filtre kontrolü işlemi, genel kontrollerle birlikte genellikle 45 dakika ile 1 saat arasında tamamlanmaktadır.
+                            </div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-surface relative overflow-hidden border-t border-surface-variant">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-container via-background to-background pointer-events-none"></div>
+<div class="container mx-auto px-margin-mobile md:px-gutter max-w-max-width relative z-10 text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Yağ bakım zamanınız geldiyse hemen arayın.</h2>
+<p class="font-technical-mono text-headline-md text-secondary mb-10 tracking-widest">0538 585 8157</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-DEFAULT font-label-caps text-label-caps hover:bg-primary-container/90 transition-all border border-transparent hover:border-white/20" href="tel:05385858157">
+<span class="material-symbols-outlined text-[18px]" data-icon="call">call</span>
+                        Hemen Ara
+                    </a>
+<a class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-surface-variant text-on-surface px-8 py-4 rounded-DEFAULT font-label-caps text-label-caps hover:bg-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
+                        WhatsApp İletişim
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-base md:px-gutter py-16 max-w-container-max-width mx-auto max-w-[1280px]">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-on-surface mb-4">ERZ GARAGE</div>
+<p class="font-body-md text-body-md text-secondary/80 text-[14px]">
+                    © 2024 ERZ GARAGE Bursa Nilüfer. Professional Automotive Excellence.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-4 uppercase">Hızlı Linkler</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary outline-none" href="#">Hizmetlerimiz</a></li>
+<li><a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary outline-none" href="#">Yol Yardım</a></li>
+<li><a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary outline-none" href="#">Gizlilik Politikası</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-4 uppercase">Uzmanlık</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary outline-none" href="#">BMW Servis</a></li>
+<li><a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary outline-none" href="#">Mercedes Servis</a></li>
+<li><a class="font-body-md text-body-md text-secondary/80 hover:text-primary transition-all focus:ring-1 focus:ring-primary outline-none" href="#">Audi Servis</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-4 uppercase">İletişim</h4>
+<p class="font-body-md text-body-md text-secondary/80 mb-2">Nilüfer, Bursa</p>
+<p class="font-body-md text-body-md text-secondary/80">0538 585 8157</p>
+</div>
+</div>
+</footer>
+</body></html>
